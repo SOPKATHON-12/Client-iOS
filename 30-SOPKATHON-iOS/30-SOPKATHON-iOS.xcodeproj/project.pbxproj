@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84F5348828394F960037DC50 /* FeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5348628394F960037DC50 /* FeedTVC.swift */; };
+		84F5348928394F960037DC50 /* FeedTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F5348728394F960037DC50 /* FeedTVC.xib */; };
 		DA143A9F158CA6D502D72119 /* Pods_30_SOPKATHON_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326D053FBCF1AF814628661B /* Pods_30_SOPKATHON_iOS.framework */; };
 		FD2289F2283908F5008427FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2289F1283908F5008427FD /* AppDelegate.swift */; };
 		FD2289F4283908F5008427FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2289F3283908F5008427FD /* SceneDelegate.swift */; };
@@ -89,6 +91,8 @@
 /* Begin PBXFileReference section */
 		326D053FBCF1AF814628661B /* Pods_30_SOPKATHON_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30_SOPKATHON_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CBB54C1815AC83BD45E6B8 /* Pods-30-SOPKATHON-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.debug.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		84F5348628394F960037DC50 /* FeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTVC.swift; sourceTree = "<group>"; };
+		84F5348728394F960037DC50 /* FeedTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTVC.xib; sourceTree = "<group>"; };
 		AD49FD6D8AAC11A97CB1B1FD /* Pods-30-SOPKATHON-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.release.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		FD2289EE283908F5008427FD /* 30-SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "30-SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2289F1283908F5008427FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +192,23 @@
 				326D053FBCF1AF814628661B /* Pods_30_SOPKATHON_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F5348428394F0B0037DC50 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84F5348528394F790037DC50 /* TVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		84F5348528394F790037DC50 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				84F5348628394F960037DC50 /* FeedTVC.swift */,
+				84F5348728394F960037DC50 /* FeedTVC.xib */,
+			);
+			path = TVC;
 			sourceTree = "<group>";
 		};
 		A091AC815DEB9A3E26B3294A /* Pods */ = {
@@ -627,6 +648,7 @@
 		FD228AAB283924EF008427FD /* FeedScene */ = {
 			isa = PBXGroup;
 			children = (
+				84F5348428394F0B0037DC50 /* Cell */,
 				FD228ABB28392562008427FD /* VC */,
 				FD228ABA2839255F008427FD /* Views */,
 			);
@@ -834,6 +856,7 @@
 				FD228A8828391F5B008427FD /* TabbarIcon.xib in Resources */,
 				FD228ABF283925E8008427FD /* Ranking.storyboard in Resources */,
 				FD2289FB283908F9008427FD /* Assets.xcassets in Resources */,
+				84F5348928394F960037DC50 /* FeedTVC.xib in Resources */,
 				FD228ACD28392685008427FD /* TouchKing.storyboard in Resources */,
 				FD228A8A28391F5B008427FD /* TabbarView.xib in Resources */,
 			);
@@ -953,6 +976,7 @@
 				FD228A7028391F25008427FD /* Config.swift in Sources */,
 				FD228A3028390B41008427FD /* Presentable.swift in Sources */,
 				FD228A5828391F1D008427FD /* setDefaultFonts.swift in Sources */,
+				84F5348828394F960037DC50 /* FeedTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
