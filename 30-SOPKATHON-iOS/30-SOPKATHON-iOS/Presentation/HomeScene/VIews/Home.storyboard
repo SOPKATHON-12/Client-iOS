@@ -28,11 +28,17 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="데시벨 버튼"/>
+                                        <connections>
+                                            <action selector="tapDecibelButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CwT-bq-jwk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60r-oe-uGX">
                                         <rect key="frame" x="0.0" y="324" width="340" height="290"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="연속 탭 버튼"/>
+                                        <connections>
+                                            <action selector="tapTouchButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qux-Ti-LYH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -48,6 +54,10 @@
                             <constraint firstItem="8DM-1Z-uhV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hPq-h3-VFV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="decibelButton" destination="tNl-q6-d8Q" id="TvO-a3-YdS"/>
+                        <outlet property="touchButton" destination="60r-oe-uGX" id="9KF-jM-4gH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
