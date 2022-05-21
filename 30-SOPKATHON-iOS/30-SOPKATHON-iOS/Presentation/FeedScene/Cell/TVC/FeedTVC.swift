@@ -7,14 +7,24 @@
 
 import UIKit
 
-class FeedTVC: UITableViewCell {
+class FeedTVC: UITableViewCell, UITableViewRegisterable {
+    static var isFromNib: Bool = true
 
+    // MARK: - IBOutlet
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var decibelLabel: UILabel!
+    @IBOutlet weak var reasonLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+}
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+// MARK: - Custom Methods
+extension FeedTVC {
+    func setData(_ feedData: FeedDataModel) {
+        profileImageView.image = feedData.gaugeImage
+        decibelLabel.text = "\(feedData.gauge) db"
+        reasonLabel.text = feedData.reason
     }
-    
 }
