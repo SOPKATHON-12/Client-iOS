@@ -33,10 +33,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jma-c6-DKF">
-                                <rect key="frame" x="90" y="38.5" width="158" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jma-c6-DKF">
+                                <rect key="frame" x="90" y="28.5" width="158" height="29"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="15"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.6200000000000001" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -45,7 +52,7 @@
                             <constraint firstItem="jma-c6-DKF" firstAttribute="leading" secondItem="cCE-wC-HQr" secondAttribute="trailing" constant="12" id="4FB-4M-Rrq"/>
                             <constraint firstItem="6pN-Cg-V7f" firstAttribute="leading" secondItem="cCE-wC-HQr" secondAttribute="trailing" constant="12" id="GAV-UD-XYx"/>
                             <constraint firstItem="cCE-wC-HQr" firstAttribute="centerY" secondItem="0Iw-ST-tEq" secondAttribute="centerY" id="GvL-lC-omU"/>
-                            <constraint firstItem="jma-c6-DKF" firstAttribute="top" secondItem="6pN-Cg-V7f" secondAttribute="bottom" id="Gvt-VU-VYZ"/>
+                            <constraint firstItem="jma-c6-DKF" firstAttribute="top" secondItem="6pN-Cg-V7f" secondAttribute="bottom" constant="-10" id="Gvt-VU-VYZ"/>
                             <constraint firstItem="cCE-wC-HQr" firstAttribute="leading" secondItem="0Iw-ST-tEq" secondAttribute="leading" constant="18" id="Uxm-PM-h4v"/>
                             <constraint firstItem="6pN-Cg-V7f" firstAttribute="top" secondItem="cCE-wC-HQr" secondAttribute="firstBaseline" id="akF-K0-W0W"/>
                             <constraint firstAttribute="trailing" secondItem="jma-c6-DKF" secondAttribute="trailing" constant="18" id="pv6-SW-L6G"/>
