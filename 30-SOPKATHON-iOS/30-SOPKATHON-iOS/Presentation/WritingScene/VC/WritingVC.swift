@@ -13,18 +13,27 @@ class WritingVC: UIViewController {
 
 
   // MARK: - UI Component Part
-
-  
-  // MARK: - Life Cycle Part
+    @IBOutlet weak var writingView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var upsetLabel: UILabel!
+    @IBOutlet weak var userImgView: UIImageView!
+    @IBOutlet weak var commentTextField: UITextField!
+    @IBOutlet weak var finishButton: UIButton!
+    // MARK: - Life Cycle Part
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        writingView.layer.cornerRadius = 10
+        commentTextField.layer.cornerRadius = 10
          
     }
     
   // MARK: - IBAction Part
-
-  
+    @IBAction func writeFinishButton(_ sender: Any) {
+    }
+    
+    
   // MARK: - Custom Method Part
 
   
