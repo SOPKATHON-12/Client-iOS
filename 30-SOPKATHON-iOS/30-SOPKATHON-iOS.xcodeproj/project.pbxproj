@@ -1023,7 +1023,6 @@
 				3B12CCA628396E3400C99203 /* Tab.storyboard in Resources */,
 				FD2289FB283908F9008427FD /* Assets.xcassets in Resources */,
 				FDDE355D28399A460093CD33 /* Main.storyboard in Resources */,
-				84F5348928394F960037DC50 /* FeedTVC.xib in Resources */,
 				FD228ACD28392685008427FD /* TouchKing.storyboard in Resources */,
 				3B12CCAD2839734800C99203 /* RankingTVC.xib in Resources */,
 				FD228A8A28391F5B008427FD /* TabbarView.xib in Resources */,

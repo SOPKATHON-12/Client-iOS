@@ -105,6 +105,11 @@ PODS:
   - KakaoSDKCommon/Network (2.9.1):
     - Alamofire (~> 5.1)
     - KakaoSDKCommon/Common (= 2.9.1)
+  - KakaoSDKLink (2.9.1):
+    - KakaoSDKCommon (= 2.9.1)
+    - KakaoSDKTemplate (= 2.9.1)
+  - KakaoSDKTemplate (2.9.1):
+    - KakaoSDKCommon/Common (= 2.9.1)
   - KakaoSDKUser (2.9.1):
     - KakaoSDKAuth (= 2.9.1)
   - Kingfisher (5.15.8):
@@ -144,6 +149,8 @@ DEPENDENCIES:
   - Gedatsu
   - KakaoSDKAuth
   - KakaoSDKCommon
+  - KakaoSDKLink
+  - KakaoSDKTemplate
   - KakaoSDKUser
   - Kingfisher (~> 5.0)
   - lottie-ios
@@ -175,6 +182,8 @@ SPEC REPOS:
     - GoogleUtilities
     - KakaoSDKAuth
     - KakaoSDKCommon
+    - KakaoSDKLink
+    - KakaoSDKTemplate
     - KakaoSDKUser
     - Kingfisher
     - lottie-ios
@@ -207,6 +216,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   KakaoSDKAuth: 8ec514e64f57f405735e92483fdae1cc2830d351
   KakaoSDKCommon: c4b08131fdba6770a280ffe83916048174f329bf
+  KakaoSDKLink: d138ac61dc3103d15f5b3ceafae9a29073b04bd4
+  KakaoSDKTemplate: 816a1c24855b30f1ad337e754963c8b17ad5053d
   KakaoSDKUser: 3b82c8f4b7bdd8584b296cf91d1be4b4a84102fb
   Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
@@ -224,6 +235,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 294ded7c4474ac2bed5db5005b0993440965cf61
+PODFILE CHECKSUM: 0314b830d350435553fc95844d5254a528469d0c
 
 COCOAPODS: 1.11.3
