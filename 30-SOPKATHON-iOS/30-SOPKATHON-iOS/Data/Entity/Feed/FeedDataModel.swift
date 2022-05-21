@@ -18,11 +18,11 @@ struct FeedDataModel {
 
 extension FeedDataModel {
     static let sampleData: [FeedDataModel] = [
-        FeedDataModel(gaugeImageName: "tab-home", gauge: 3, reason: "나를 빡치게한 이유 어쩌구"),
-        FeedDataModel(gaugeImageName: "tab-home", gauge: 3, reason: "나를 빡치게한 이유 어쩌구"),
-        FeedDataModel(gaugeImageName: "tab-home", gauge: 3, reason: "나를 빡치게한 이유 어쩌구"),
-        FeedDataModel(gaugeImageName: "tab-home", gauge: 3, reason: "나를 빡치게한 이유 어쩌구"),
-        FeedDataModel(gaugeImageName: "tab-home", gauge: 3, reason: "나를 빡치게한 이유 어쩌구"),
-        FeedDataModel(gaugeImageName: "tab-home", gauge: 3, reason: "나를 빡치게한 이유 어쩌구")
+        FeedDataModel(gaugeImageName: "angry_icon_4", gauge: 3, reason: "나를 빡치게한 이유 어쩌구"),
+        FeedDataModel(gaugeImageName: "angry_icon_4", gauge: 3, reason: "나를 빡치게한 이유 어쩌구"),
+        FeedDataModel(gaugeImageName: "angry_icon_4", gauge: 3, reason: "나를 빡치게한 이유 어쩌구"),
+        FeedDataModel(gaugeImageName: "angry_icon_4", gauge: 3, reason: "나를 빡치게한 이유 어쩌구"),
+        FeedDataModel(gaugeImageName: "angry_icon_4", gauge: 3, reason: "나를 빡치게한 이유 어쩌구"),
+        FeedDataModel(gaugeImageName: "angry_icon_4", gauge: 3, reason: "나를 빡치게한 이유 어쩌구")
     ]
 }
