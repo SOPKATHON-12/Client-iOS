@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1104935ECC50B2C839497A /* Pods_30_SOPKATHON_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4158DCE63860458F8B8CE1D0 /* Pods_30_SOPKATHON_iOS.framework */; };
+		84F5348828394F960037DC50 /* FeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5348628394F960037DC50 /* FeedTVC.swift */; };
+		84F5348928394F960037DC50 /* FeedTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F5348728394F960037DC50 /* FeedTVC.xib */; };
+		84F5348C283956F40037DC50 /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5348B283956F40037DC50 /* FeedDataModel.swift */; };
 		DA143A9F158CA6D502D72119 /* Pods_30_SOPKATHON_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326D053FBCF1AF814628661B /* Pods_30_SOPKATHON_iOS.framework */; };
+		FD166A7F2839761D008C11B0 /* crayon.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FD166A7D28397597008C11B0 /* crayon.TTF */; };
 		FD2289F2283908F5008427FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2289F1283908F5008427FD /* AppDelegate.swift */; };
 		FD2289F4283908F5008427FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2289F3283908F5008427FD /* SceneDelegate.swift */; };
 		FD2289FB283908F9008427FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2289FA283908F9008427FD /* Assets.xcassets */; };
@@ -84,12 +89,22 @@
 		FD228ACF28392691008427FD /* TouchKingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228ACE28392691008427FD /* TouchKingVC.swift */; };
 		FD228AD1283926A0008427FD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AD0283926A0008427FD /* HomeVC.swift */; };
 		FD228AD5283926B2008427FD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD228AD4283926B2008427FD /* Home.storyboard */; };
+		FD228ADE28395D89008427FD /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228ADD28395D89008427FD /* SplashVC.swift */; };
+		FD228AE028395DB9008427FD /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD228ADF28395DB9008427FD /* Splash.storyboard */; };
+		FD228AE228395EB8008427FD /* delayWithSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AE128395EB8008427FD /* delayWithSeconds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		139AFB3CA9926AB3606DF95E /* Pods-30-SOPKATHON-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.debug.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4158DCE63860458F8B8CE1D0 /* Pods_30_SOPKATHON_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30_SOPKATHON_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDEBCC8D5309B8628A433E3 /* Pods-30-SOPKATHON-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.release.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		84F5348628394F960037DC50 /* FeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTVC.swift; sourceTree = "<group>"; };
+		84F5348728394F960037DC50 /* FeedTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTVC.xib; sourceTree = "<group>"; };
+		84F5348B283956F40037DC50 /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
 		326D053FBCF1AF814628661B /* Pods_30_SOPKATHON_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30_SOPKATHON_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CBB54C1815AC83BD45E6B8 /* Pods-30-SOPKATHON-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.debug.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AD49FD6D8AAC11A97CB1B1FD /* Pods-30-SOPKATHON-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.release.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		FD166A7D28397597008C11B0 /* crayon.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = crayon.TTF; sourceTree = "<group>"; };
 		FD2289EE283908F5008427FD /* 30-SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "30-SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2289F1283908F5008427FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD2289F3283908F5008427FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +183,9 @@
 		FD228ACE28392691008427FD /* TouchKingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchKingVC.swift; sourceTree = "<group>"; };
 		FD228AD0283926A0008427FD /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FD228AD4283926B2008427FD /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FD228ADD28395D89008427FD /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		FD228ADF28395DB9008427FD /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		FD228AE128395EB8008427FD /* delayWithSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delayWithSeconds.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,17 +193,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA143A9F158CA6D502D72119 /* Pods_30_SOPKATHON_iOS.framework in Frameworks */,
+				3F1104935ECC50B2C839497A /* Pods_30_SOPKATHON_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7169886BF10443A8F8E43DE4 /* Frameworks */ = {
+		84F5348428394F0B0037DC50 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				326D053FBCF1AF814628661B /* Pods_30_SOPKATHON_iOS.framework */,
+				84F5348528394F790037DC50 /* TVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		84F5348528394F790037DC50 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				84F5348628394F960037DC50 /* FeedTVC.swift */,
+				84F5348728394F960037DC50 /* FeedTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		84F5348A283956E70037DC50 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				84F5348B283956F40037DC50 /* FeedDataModel.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		9D429DF0FC2ACB2521DE9988 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4158DCE63860458F8B8CE1D0 /* Pods_30_SOPKATHON_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,10 +236,18 @@
 		A091AC815DEB9A3E26B3294A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				41CBB54C1815AC83BD45E6B8 /* Pods-30-SOPKATHON-iOS.debug.xcconfig */,
-				AD49FD6D8AAC11A97CB1B1FD /* Pods-30-SOPKATHON-iOS.release.xcconfig */,
+				139AFB3CA9926AB3606DF95E /* Pods-30-SOPKATHON-iOS.debug.xcconfig */,
+				5CDEBCC8D5309B8628A433E3 /* Pods-30-SOPKATHON-iOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD166A7B2839755F008C11B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FD166A7D28397597008C11B0 /* crayon.TTF */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		FD2289E5283908F5008427FD = {
@@ -205,7 +256,7 @@
 				FD2289F0283908F5008427FD /* 30-SOPKATHON-iOS */,
 				FD2289EF283908F5008427FD /* Products */,
 				A091AC815DEB9A3E26B3294A /* Pods */,
-				7169886BF10443A8F8E43DE4 /* Frameworks */,
+				9D429DF0FC2ACB2521DE9988 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,6 +308,7 @@
 		FD228A0728390ABE008427FD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FD228AD628395D31008427FD /* SplashScene */,
 				FD228A7328391F5B008427FD /* BaseScene */,
 				FD228A7E28391F5B008427FD /* HomeScene */,
 				FD228AAF2839251C008427FD /* TouchKingScene */,
@@ -306,6 +358,7 @@
 				FD228A4C28391F1D008427FD /* setImage.swift */,
 				FD228A4E28391F1D008427FD /* showNetworkAlert.swift */,
 				FD228A5028391F1D008427FD /* showToastMessage.swift */,
+				FD228AE128395EB8008427FD /* delayWithSeconds.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -423,6 +476,7 @@
 		FD228A3728391DC0008427FD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FD166A7B2839755F008C11B0 /* Fonts */,
 				FD2289FA283908F9008427FD /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -513,6 +567,7 @@
 		FD228A6428391F25008427FD /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				84F5348A283956E70037DC50 /* Feed */,
 				FD228A6528391F25008427FD /* Sample */,
 			);
 			path = Entity;
@@ -627,6 +682,7 @@
 		FD228AAB283924EF008427FD /* FeedScene */ = {
 			isa = PBXGroup;
 			children = (
+				84F5348428394F0B0037DC50 /* Cell */,
 				FD228ABB28392562008427FD /* VC */,
 				FD228ABA2839255F008427FD /* Views */,
 			);
@@ -765,6 +821,31 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		FD228AD628395D31008427FD /* SplashScene */ = {
+			isa = PBXGroup;
+			children = (
+				FD228ADA28395D62008427FD /* Views */,
+				FD228AD928395D5B008427FD /* VC */,
+			);
+			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		FD228AD928395D5B008427FD /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FD228ADD28395D89008427FD /* SplashVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		FD228ADA28395D62008427FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD228ADF28395DB9008427FD /* Splash.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -772,11 +853,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD228A02283908F9008427FD /* Build configuration list for PBXNativeTarget "30-SOPKATHON-iOS" */;
 			buildPhases = (
-				35927D56B134D15D4E344613 /* [CP] Check Pods Manifest.lock */,
+				2800316D11F813FCED556701 /* [CP] Check Pods Manifest.lock */,
 				FD2289EA283908F5008427FD /* Sources */,
 				FD2289EB283908F5008427FD /* Frameworks */,
 				FD2289EC283908F5008427FD /* Resources */,
-				5505F24B5002DB7C86BEDD59 /* [CP] Embed Pods Frameworks */,
+				452F11D8FA7CD910A3161A8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -829,20 +910,23 @@
 				FD228AD5283926B2008427FD /* Home.storyboard in Resources */,
 				FD2289FE283908F9008427FD /* LaunchScreen.storyboard in Resources */,
 				FD228AC128392619008427FD /* Feed.storyboard in Resources */,
+				FD166A7F2839761D008C11B0 /* crayon.TTF in Resources */,
 				FD228A8628391F5B008427FD /* Base.storyboard in Resources */,
 				FD228AC728392654008427FD /* Writing.storyboard in Resources */,
 				FD228A8828391F5B008427FD /* TabbarIcon.xib in Resources */,
 				FD228ABF283925E8008427FD /* Ranking.storyboard in Resources */,
 				FD2289FB283908F9008427FD /* Assets.xcassets in Resources */,
+				84F5348928394F960037DC50 /* FeedTVC.xib in Resources */,
 				FD228ACD28392685008427FD /* TouchKing.storyboard in Resources */,
 				FD228A8A28391F5B008427FD /* TabbarView.xib in Resources */,
+				FD228AE028395DB9008427FD /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		35927D56B134D15D4E344613 /* [CP] Check Pods Manifest.lock */ = {
+		2800316D11F813FCED556701 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -864,7 +948,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5505F24B5002DB7C86BEDD59 /* [CP] Embed Pods Frameworks */ = {
+		452F11D8FA7CD910A3161A8F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -909,6 +993,7 @@
 				FD228A6E28391F25008427FD /* SampleEntity.swift in Sources */,
 				FD228A3528390B41008427FD /* Router.swift in Sources */,
 				FD2289F4283908F5008427FD /* SceneDelegate.swift in Sources */,
+				84F5348C283956F40037DC50 /* FeedDataModel.swift in Sources */,
 				FD228A2B28390B41008427FD /* AnalyticsType.swift in Sources */,
 				FD228A8928391F5B008427FD /* TabbarView.swift in Sources */,
 				FD228ACB2839267C008427FD /* SoundKingVC.swift in Sources */,
@@ -923,6 +1008,7 @@
 				FD228A9A283920FE008427FD /* drawDashedLine + UIView.swift in Sources */,
 				FD228A5B28391F1D008427FD /* setImage.swift in Sources */,
 				FD228A4128391EC4008427FD /* SampleModel.swift in Sources */,
+				FD228ADE28395D89008427FD /* SplashVC.swift in Sources */,
 				FD228A98283920FE008427FD /* successCatch + Result.swift in Sources */,
 				FD228A3328390B41008427FD /* ModuleFactory.swift in Sources */,
 				FD228A6D28391F25008427FD /* SampleRepository.swift in Sources */,
@@ -944,6 +1030,7 @@
 				FD228A7228391F25008427FD /* BaseService.swift in Sources */,
 				FD228A2E28390B41008427FD /* LaunchInstructor.swift in Sources */,
 				FD228A7128391F25008427FD /* ResponseObject.swift in Sources */,
+				FD228AE228395EB8008427FD /* delayWithSeconds.swift in Sources */,
 				FD228AD1283926A0008427FD /* HomeVC.swift in Sources */,
 				FD228A8728391F5B008427FD /* TabbarIcon.swift in Sources */,
 				FD228A2D28390B41008427FD /* BaseCoordinator.swift in Sources */,
@@ -953,6 +1040,7 @@
 				FD228A7028391F25008427FD /* Config.swift in Sources */,
 				FD228A3028390B41008427FD /* Presentable.swift in Sources */,
 				FD228A5828391F1D008427FD /* setDefaultFonts.swift in Sources */,
+				84F5348828394F960037DC50 /* FeedTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,7 +1174,7 @@
 		};
 		FD228A03283908F9008427FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41CBB54C1815AC83BD45E6B8 /* Pods-30-SOPKATHON-iOS.debug.xcconfig */;
+			baseConfigurationReference = 139AFB3CA9926AB3606DF95E /* Pods-30-SOPKATHON-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1115,7 +1203,7 @@
 		};
 		FD228A04283908F9008427FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD49FD6D8AAC11A97CB1B1FD /* Pods-30-SOPKATHON-iOS.release.xcconfig */;
+			baseConfigurationReference = 5CDEBCC8D5309B8628A433E3 /* Pods-30-SOPKATHON-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

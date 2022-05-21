@@ -8,27 +8,52 @@
 import UIKit
 
 class FeedVC: UIViewController {
-
-  // MARK: - Vars & Lets Part
-
-
-  // MARK: - UI Component Part
-
-  
-  // MARK: - Life Cycle Part
-  
+    
+    // MARK: - Vars & Lets Part
+    
+    
+    // MARK: - UI Component Part
+    @IBOutlet weak var gaugeImageView: UIImageView!
+    @IBOutlet weak var monthLabel: UILabel!
+    @IBOutlet weak var feedTV: UITableView!
+    
+    // MARK: - Life Cycle Part
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+        setTVC()
     }
     
-  // MARK: - IBAction Part
-
-  
-  // MARK: - Custom Method Part
-
-  
-  // MARK: - @objc Function Part
-
+    // MARK: - IBAction Part
 }
-// MARK: - Extension Part
+
+// MARK: - Custom Method Part
+extension FeedVC {
+    private func setTVC() {
+        FeedTVC.register(target: feedTV)
+        feedTV.delegate = self
+        feedTV.dataSource = self
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension FeedVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 104
+    }
+}
+
+// MARK: - UITableViewDataSource
+extension FeedVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return FeedDataModel.sampleData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTVC.className, for: indexPath) as? FeedTVC else { return UITableViewCell() }
+        
+        cell.setData(FeedDataModel.sampleData[indexPath.row])
+        
+        return cell
+    }
+}
