@@ -16,6 +16,8 @@ enum Storyboards: String {
   case writing = "Writing"
   case feed = "Feed"
   case ranking = "Ranking"
+  case decibel = "Decibel"
+  case tab = "Tab"
 }
 
 extension UIStoryboard{
