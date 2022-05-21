@@ -16,12 +16,14 @@ class SoundKingVC: UIViewController {
   
   var recorder: AVAudioRecorder!
   var levelTimer = Timer()
+  var maxDB = 0
   
   // MARK: - UI Component Part
   
+  @IBOutlet weak var levelScrollView: UIScrollView!
   @IBOutlet weak var lblDecibel: UILabel!
-  @IBOutlet weak var lblLoudState: UILabel!
   
+  @IBOutlet weak var maxLabel: UILabel!
   // MARK: - Life Cycle Part
   
   override func viewDidLoad() {
@@ -45,10 +47,7 @@ class SoundKingVC: UIViewController {
         AVAudioSession.sharedInstance().requestRecordPermission({ (granted) in
           print(granted)
           if granted {
-            // timer는 main thread 에서 실행됨
-            // 그러나 requestRecordPermission 의 클로저 함수는 별도의 스레드에서 실행되므로
-            // 강제로 main 에서 실행되도록 한다.
-            //
+
             DispatchQueue.main.sync {
               self.record()
             }
@@ -101,7 +100,7 @@ class SoundKingVC: UIViewController {
     recorder.record()
     
     // 타이머는 main thread 에서 실행됨
-    levelTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(levelTimerCallback), userInfo: nil, repeats: true)
+    levelTimer = Timer.scheduledTimer(timeInterval: 0.03, target: self, selector: #selector(levelTimerCallback), userInfo: nil, repeats: true)
   }
   
   @objc func levelTimerCallback() {
@@ -110,10 +109,14 @@ class SoundKingVC: UIViewController {
     let level = recorder.averagePower(forChannel: 0)
     let power = pow(10.0, level / 20.0) * 70.0  + 55
     let powerInt = String(Int(round(power)))
-    print("level",powerInt)
-    lblDecibel.text = powerInt
+    maxDB = max(maxDB, Int(round(power)))
     
+    let a = (round(power) - 60) / 15
+    maxLabel.text = String(maxDB)
+    
+    levelScrollView.setContentOffset(CGPoint(x: CGFloat(a) * screenWidth, y: 0), animated: true)
 
+    lblDecibel.text = powerInt
     
   }
   
