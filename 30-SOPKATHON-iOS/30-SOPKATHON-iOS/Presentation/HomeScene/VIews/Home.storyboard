@@ -54,6 +54,7 @@
                             <constraint firstItem="8DM-1Z-uhV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="86" id="v6K-yk-eOF"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Vdo-Vd-cRT"/>
                     <connections>
                         <outlet property="decibelButton" destination="tNl-q6-d8Q" id="TvO-a3-YdS"/>
                         <outlet property="touchButton" destination="60r-oe-uGX" id="9KF-jM-4gH"/>
@@ -61,7 +62,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="102"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="101.78571428571428"/>
+        </scene>
+        <!--HomeNC-->
+        <scene sceneID="8lf-Wi-pGG">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNC" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="c18-Pw-ljE" customClass="HomeNC" customModule="_0_SOPKATHON_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zxp-gD-gg6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="gj5-uO-gVC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ves-ML-f8L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
         </scene>
     </scenes>
     <resources>

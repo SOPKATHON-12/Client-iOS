@@ -25,12 +25,22 @@ class HomeVC: UIViewController {
     
     // MARK: - IBAction Part
     @IBAction func tapDecibelButton(_ sender: Any) {
-        
+      moveDecible()
     }
     
     @IBAction func tapTouchButton(_ sender: Any) {
-        
+      moveTap()
     }
+  
+  private func moveDecible() {
+    let decibelVC = ModuleFactory.shared.makeSoundKingVC()
+    self.navigationController?.pushViewController(decibelVC, animated: true)
+  }
+  
+  private func moveTap() {
+    let tapVC = ModuleFactory.shared.makeTouchKingVC()
+    self.navigationController?.pushViewController(tapVC, animated: true)
+  }
 }
 
 

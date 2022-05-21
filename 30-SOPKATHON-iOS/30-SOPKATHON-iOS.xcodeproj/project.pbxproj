@@ -98,6 +98,17 @@
 		FD228ADE28395D89008427FD /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228ADD28395D89008427FD /* SplashVC.swift */; };
 		FD228AE028395DB9008427FD /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD228ADF28395DB9008427FD /* Splash.storyboard */; };
 		FD228AE228395EB8008427FD /* delayWithSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AE128395EB8008427FD /* delayWithSeconds.swift */; };
+		FD9490972839855200390E85 /* FeedCalendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9490962839855200390E85 /* FeedCalendar.storyboard */; };
+		FD9490992839857200390E85 /* FeedCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9490982839857200390E85 /* FeedCalendarVC.swift */; };
+		FDDE3559283990CE0093CD33 /* FeedCalendarNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE3558283990CE0093CD33 /* FeedCalendarNC.swift */; };
+		FDDE355B2839920B0093CD33 /* HomeNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE355A2839920B0093CD33 /* HomeNC.swift */; };
+		FDDE355D28399A460093CD33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDE355C28399A460093CD33 /* Main.storyboard */; };
+		FDDE355F28399E420093CD33 /* MonthListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE355E28399E420093CD33 /* MonthListEntity.swift */; };
+		FDDE356128399EC10093CD33 /* DayDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE356028399EC10093CD33 /* DayDetailEntity.swift */; };
+		FDDE356328399F1B0093CD33 /* RankingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE356228399F1B0093CD33 /* RankingEntity.swift */; };
+		FDDE356528399F9B0093CD33 /* RankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE356428399F9B0093CD33 /* RankService.swift */; };
+		FDDE35672839A0200093CD33 /* WriteCommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE35662839A0200093CD33 /* WriteCommentService.swift */; };
+		FDDE35692839A0780093CD33 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE35682839A0780093CD33 /* FeedService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +209,17 @@
 		FD228ADD28395D89008427FD /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		FD228ADF28395DB9008427FD /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		FD228AE128395EB8008427FD /* delayWithSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delayWithSeconds.swift; sourceTree = "<group>"; };
+		FD9490962839855200390E85 /* FeedCalendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedCalendar.storyboard; sourceTree = "<group>"; };
+		FD9490982839857200390E85 /* FeedCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCalendarVC.swift; sourceTree = "<group>"; };
+		FDDE3558283990CE0093CD33 /* FeedCalendarNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCalendarNC.swift; sourceTree = "<group>"; };
+		FDDE355A2839920B0093CD33 /* HomeNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNC.swift; sourceTree = "<group>"; };
+		FDDE355C28399A460093CD33 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FDDE355E28399E420093CD33 /* MonthListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthListEntity.swift; sourceTree = "<group>"; };
+		FDDE356028399EC10093CD33 /* DayDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailEntity.swift; sourceTree = "<group>"; };
+		FDDE356228399F1B0093CD33 /* RankingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingEntity.swift; sourceTree = "<group>"; };
+		FDDE356428399F9B0093CD33 /* RankService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankService.swift; sourceTree = "<group>"; };
+		FDDE35662839A0200093CD33 /* WriteCommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteCommentService.swift; sourceTree = "<group>"; };
+		FDDE35682839A0780093CD33 /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,8 +377,10 @@
 				FD228AAE28392516008427FD /* SoundKingScene */,
 				FD228AAD283924FE008427FD /* WritingScene */,
 				FD228AAB283924EF008427FD /* FeedScene */,
+				FD9490952839854100390E85 /* FeedCalendarScene */,
 				FD228AAC283924F6008427FD /* RankingScene */,
 				FD228A8228391F5B008427FD /* SampleScene */,
+				FDDE355C28399A460093CD33 /* Main.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -609,6 +633,9 @@
 			children = (
 				84F5348A283956E70037DC50 /* Feed */,
 				FD228A6528391F25008427FD /* Sample */,
+				FDDE355E28399E420093CD33 /* MonthListEntity.swift */,
+				FDDE356028399EC10093CD33 /* DayDetailEntity.swift */,
+				FDDE356228399F1B0093CD33 /* RankingEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -628,6 +655,9 @@
 				FD228A6928391F25008427FD /* Config.swift */,
 				FD228A6A28391F25008427FD /* ResponseObject.swift */,
 				FD228A6B28391F25008427FD /* Service */,
+				FDDE356428399F9B0093CD33 /* RankService.swift */,
+				FDDE35662839A0200093CD33 /* WriteCommentService.swift */,
+				FDDE35682839A0780093CD33 /* FeedService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -862,6 +892,7 @@
 			isa = PBXGroup;
 			children = (
 				FD228AD0283926A0008427FD /* HomeVC.swift */,
+				FDDE355A2839920B0093CD33 /* HomeNC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -887,6 +918,32 @@
 			isa = PBXGroup;
 			children = (
 				FD228ADF28395DB9008427FD /* Splash.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD9490952839854100390E85 /* FeedCalendarScene */ = {
+			isa = PBXGroup;
+			children = (
+				FD94909B2839857900390E85 /* Views */,
+				FD94909A2839857500390E85 /* VC */,
+			);
+			path = FeedCalendarScene;
+			sourceTree = "<group>";
+		};
+		FD94909A2839857500390E85 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FD9490982839857200390E85 /* FeedCalendarVC.swift */,
+				FDDE3558283990CE0093CD33 /* FeedCalendarNC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		FD94909B2839857900390E85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD9490962839855200390E85 /* FeedCalendar.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -955,6 +1012,7 @@
 				FD228AD5283926B2008427FD /* Home.storyboard in Resources */,
 				FD2289FE283908F9008427FD /* LaunchScreen.storyboard in Resources */,
 				FD228AC128392619008427FD /* Feed.storyboard in Resources */,
+				FD9490972839855200390E85 /* FeedCalendar.storyboard in Resources */,
 				FD166A7F2839761D008C11B0 /* crayon.TTF in Resources */,
 				FD228A8628391F5B008427FD /* Base.storyboard in Resources */,
 				3B12CCA428396BA700C99203 /* Decibel.storyboard in Resources */,
@@ -964,6 +1022,7 @@
 				FD228ABF283925E8008427FD /* Ranking.storyboard in Resources */,
 				3B12CCA628396E3400C99203 /* Tab.storyboard in Resources */,
 				FD2289FB283908F9008427FD /* Assets.xcassets in Resources */,
+				FDDE355D28399A460093CD33 /* Main.storyboard in Resources */,
 				FD228ACD28392685008427FD /* TouchKing.storyboard in Resources */,
 				3B12CCAD2839734800C99203 /* RankingTVC.xib in Resources */,
 				FD228A8A28391F5B008427FD /* TabbarView.xib in Resources */,
@@ -1035,14 +1094,18 @@
 				FD228A3128390B41008427FD /* BaseControllable.swift in Sources */,
 				FD228A5428391F1D008427FD /* getClassName.swift in Sources */,
 				FD228A2A28390B41008427FD /* AppLog.swift in Sources */,
+				FDDE355F28399E420093CD33 /* MonthListEntity.swift in Sources */,
 				FD228AA128392105008427FD /* StoryboardLiterals.swift in Sources */,
 				FD228A5D28391F1D008427FD /* showNetworkAlert.swift in Sources */,
+				FDDE35692839A0780093CD33 /* FeedService.swift in Sources */,
 				FD228A2628390B41008427FD /* BaseNotiList.swift in Sources */,
+				FDDE355B2839920B0093CD33 /* HomeNC.swift in Sources */,
 				FD228A6F28391F25008427FD /* BaseAPI.swift in Sources */,
 				FD228A6E28391F25008427FD /* SampleEntity.swift in Sources */,
 				FD228A3528390B41008427FD /* Router.swift in Sources */,
 				FD2289F4283908F5008427FD /* SceneDelegate.swift in Sources */,
 				84F5348C283956F40037DC50 /* FeedDataModel.swift in Sources */,
+				FD9490992839857200390E85 /* FeedCalendarVC.swift in Sources */,
 				FD228A2B28390B41008427FD /* AnalyticsType.swift in Sources */,
 				FD228A8928391F5B008427FD /* TabbarView.swift in Sources */,
 				FD228ACB2839267C008427FD /* SoundKingVC.swift in Sources */,
@@ -1057,12 +1120,14 @@
 				FD228A9A283920FE008427FD /* drawDashedLine + UIView.swift in Sources */,
 				FD228A5B28391F1D008427FD /* setImage.swift in Sources */,
 				FD228A4128391EC4008427FD /* SampleModel.swift in Sources */,
+				FDDE3559283990CE0093CD33 /* FeedCalendarNC.swift in Sources */,
 				FD228ADE28395D89008427FD /* SplashVC.swift in Sources */,
 				FD228A98283920FE008427FD /* successCatch + Result.swift in Sources */,
 				FD228A3328390B41008427FD /* ModuleFactory.swift in Sources */,
 				FD228A6D28391F25008427FD /* SampleRepository.swift in Sources */,
 				FD228AA328392105008427FD /* ImageLiterals.swift in Sources */,
 				FD228A5728391F1D008427FD /* addToolBar.swift in Sources */,
+				FDDE356328399F1B0093CD33 /* RankingEntity.swift in Sources */,
 				FD228A2728390B41008427FD /* FirebaseServiceProtocol.swift in Sources */,
 				3B12CCA0283953D000C99203 /* DecibelVC.swift in Sources */,
 				3B12CCAC2839734800C99203 /* RankingTVC.swift in Sources */,
@@ -1086,12 +1151,15 @@
 				FD228AD1283926A0008427FD /* HomeVC.swift in Sources */,
 				FD228A8728391F5B008427FD /* TabbarIcon.swift in Sources */,
 				FD228A2D28390B41008427FD /* BaseCoordinator.swift in Sources */,
+				FDDE356128399EC10093CD33 /* DayDetailEntity.swift in Sources */,
 				3BC7CBF028398AAA0020B11C /* FeedTVC.swift in Sources */,
 				FD228A3428390B41008427FD /* CoordinatorFactory.swift in Sources */,
 				FD228A2928390B41008427FD /* RuntimeProviderType.swift in Sources */,
+				FDDE35672839A0200093CD33 /* WriteCommentService.swift in Sources */,
 				FD228A5E28391F1D008427FD /* downloadImage.swift in Sources */,
 				FD228A7028391F25008427FD /* Config.swift in Sources */,
 				FD228A3028390B41008427FD /* Presentable.swift in Sources */,
+				FDDE356528399F9B0093CD33 /* RankService.swift in Sources */,
 				FD228A5828391F1D008427FD /* setDefaultFonts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1235,11 +1303,14 @@
 				DEVELOPMENT_TEAM = L9D5M5DM3Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "30-SOPKATHON-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "한도초과";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "분노 게이지를 측정하기 위해 마이크 사용권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1264,11 +1335,14 @@
 				DEVELOPMENT_TEAM = L9D5M5DM3Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "30-SOPKATHON-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "한도초과";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "분노 게이지를 측정하기 위해 마이크 사용권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

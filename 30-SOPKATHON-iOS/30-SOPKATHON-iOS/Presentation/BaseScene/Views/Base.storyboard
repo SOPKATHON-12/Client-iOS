@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZG-lt-fIF">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="789"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VsR-Cu-iBN" customClass="TabbarView" customModule="_0_SOPKATHON_iOS" customModuleProvider="target">
@@ -37,7 +37,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VsR-Cu-iBN" secondAttribute="bottom" id="HX7-pI-Dah"/>
                             <constraint firstItem="VsR-Cu-iBN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="VcD-aK-B06"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cZG-lt-fIF" secondAttribute="trailing" id="gnM-6y-H2p"/>
-                            <constraint firstItem="VsR-Cu-iBN" firstAttribute="top" secondItem="cZG-lt-fIF" secondAttribute="bottom" id="kwf-Of-31U"/>
+                            <constraint firstAttribute="bottom" secondItem="cZG-lt-fIF" secondAttribute="bottom" id="kwf-Of-31U"/>
                             <constraint firstItem="cZG-lt-fIF" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="nOK-VY-dHk"/>
                         </constraints>
                     </view>

@@ -7,6 +7,7 @@ import Foundation
 protocol ModuleFactoryProtocol {
   func makeBaseVC() -> BaseVC
   func makeHomeVC() -> HomeVC
+  func makeHomeNC() -> HomeNC
   func makeSoundKingVC() -> SoundKingVC
   func makeTouchKingVC() -> TouchKingVC
   func makeWritingVC() -> WritingVC
@@ -14,6 +15,9 @@ protocol ModuleFactoryProtocol {
   func makeRankingVC() -> RankingVC
 func makeDecibelVC() -> DecibelVC
     func makeTabVC() -> TabVC
+  func makeFeedCalendarNC() -> FeedCalendarNC
+  func makefeedCalendarVC() -> FeedCalendarVC
+  
 }
 
 final class ModuleFactory: ModuleFactoryProtocol{
@@ -29,6 +33,10 @@ final class ModuleFactory: ModuleFactoryProtocol{
   
   func makeHomeVC() -> HomeVC {
     return HomeVC.controllerFromStoryboard(.home)
+  }
+  
+  func makeHomeNC() -> HomeNC {
+    return HomeNC.controllerFromStoryboard(.home)
   }
   
   func makeSoundKingVC() -> SoundKingVC {
@@ -59,4 +67,12 @@ final class ModuleFactory: ModuleFactoryProtocol{
         return TabVC.controllerFromStoryboard(.tab)
     }
   
+  func makeFeedCalendarNC() -> FeedCalendarNC {
+    return FeedCalendarNC.controllerFromStoryboard(.feedCalendar)
+  }
+  
+  func makefeedCalendarVC() -> FeedCalendarVC {
+    return FeedCalendarVC.controllerFromStoryboard(.feedCalendar)
+  }
+
 }

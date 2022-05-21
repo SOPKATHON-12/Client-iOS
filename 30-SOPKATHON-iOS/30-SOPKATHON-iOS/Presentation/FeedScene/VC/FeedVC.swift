@@ -9,6 +9,7 @@ import UIKit
 
 class FeedVC: UIViewController {
     
+  var monthEntity: MonthListEntity?
     // MARK: - UI Component Part
     @IBOutlet weak var gaugeImageView: UIImageView!
     @IBOutlet weak var monthLabel: UILabel!
@@ -20,6 +21,7 @@ class FeedVC: UIViewController {
         super.viewDidLoad()
         setTVC()
         setView()
+      addObserver()
     }
 }
 
@@ -35,6 +37,20 @@ extension FeedVC {
         self.view.backgroundColor = UIColor(red: 0.961, green: 0.961, blue: 0.961, alpha: 1)
         self.feedTV.backgroundColor = UIColor(red: 0.961, green: 0.961, blue: 0.961, alpha: 1)
     }
+  
+  private func fetchData() {
+    BaseService.default.getMonthData(month: 5) { result in
+      result.success { entity in
+        self.monthEntity = entity
+      }
+    }
+  }
+  
+  private func addObserver() {
+    addObserverAction(.feedButtonClicked) { _ in
+      self.navigationController?.popViewController(animated: true)
+    }
+  }
 }
 
 // MARK: - UITableViewDelegate
@@ -57,4 +73,20 @@ extension FeedVC: UITableViewDataSource {
         
         return cell
     }
+  
+  func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    cell.transform = CGAffineTransform(translationX: 0, y: 74 * 1.4)
+    cell.alpha = 0
+    UIView.animate(
+        withDuration: 0.5,
+        delay: 0.15 * Double(indexPath.row),
+        options: [.curveEaseInOut],
+        animations: {
+            cell.transform = CGAffineTransform(translationX: 0, y: 0)
+            cell.alpha = 1
+        
+        }
+    )
+    
+  }
 }

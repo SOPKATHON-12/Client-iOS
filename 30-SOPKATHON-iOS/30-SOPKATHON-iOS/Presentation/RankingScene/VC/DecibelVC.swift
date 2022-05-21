@@ -61,6 +61,23 @@ extension DecibelVC: UITableViewDataSource {
         
         return cell
     }
+  
+  func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    
+    cell.transform = CGAffineTransform(translationX: 0, y: 74 * 1.4)
+    cell.alpha = 0
+    UIView.animate(
+        withDuration: 0.5,
+        delay: 0.15 * Double(indexPath.row),
+        options: [.curveEaseInOut],
+        animations: {
+            cell.transform = CGAffineTransform(translationX: 0, y: 0)
+            cell.alpha = 1
+        
+        }
+    )
+    
+  }
     
     
 }
