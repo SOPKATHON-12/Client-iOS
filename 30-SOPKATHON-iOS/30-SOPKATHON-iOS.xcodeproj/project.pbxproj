@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA143A9F158CA6D502D72119 /* Pods_30_SOPKATHON_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326D053FBCF1AF814628661B /* Pods_30_SOPKATHON_iOS.framework */; };
+		91243ADA2B4C0DBD1878C96B /* Pods_30_SOPKATHON_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF75F466FC57682DE99A2850 /* Pods_30_SOPKATHON_iOS.framework */; };
 		FD2289F2283908F5008427FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2289F1283908F5008427FD /* AppDelegate.swift */; };
 		FD2289F4283908F5008427FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2289F3283908F5008427FD /* SceneDelegate.swift */; };
 		FD2289FB283908F9008427FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2289FA283908F9008427FD /* Assets.xcassets */; };
@@ -90,9 +90,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		326D053FBCF1AF814628661B /* Pods_30_SOPKATHON_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30_SOPKATHON_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41CBB54C1815AC83BD45E6B8 /* Pods-30-SOPKATHON-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.debug.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		AD49FD6D8AAC11A97CB1B1FD /* Pods-30-SOPKATHON-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.release.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		181E7E73C02D546B5E77FF66 /* Pods-30-SOPKATHON-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.release.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DAEC9533F01617FB965E7736 /* Pods-30-SOPKATHON-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.debug.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DF75F466FC57682DE99A2850 /* Pods_30_SOPKATHON_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30_SOPKATHON_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2289EE283908F5008427FD /* 30-SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "30-SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2289F1283908F5008427FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD2289F3283908F5008427FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,17 +181,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA143A9F158CA6D502D72119 /* Pods_30_SOPKATHON_iOS.framework in Frameworks */,
+				91243ADA2B4C0DBD1878C96B /* Pods_30_SOPKATHON_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7169886BF10443A8F8E43DE4 /* Frameworks */ = {
+		53C32B052CD561F9D7E48C60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				326D053FBCF1AF814628661B /* Pods_30_SOPKATHON_iOS.framework */,
+				DF75F466FC57682DE99A2850 /* Pods_30_SOPKATHON_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,8 +199,8 @@
 		A091AC815DEB9A3E26B3294A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				41CBB54C1815AC83BD45E6B8 /* Pods-30-SOPKATHON-iOS.debug.xcconfig */,
-				AD49FD6D8AAC11A97CB1B1FD /* Pods-30-SOPKATHON-iOS.release.xcconfig */,
+				DAEC9533F01617FB965E7736 /* Pods-30-SOPKATHON-iOS.debug.xcconfig */,
+				181E7E73C02D546B5E77FF66 /* Pods-30-SOPKATHON-iOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 				FD2289F0283908F5008427FD /* 30-SOPKATHON-iOS */,
 				FD2289EF283908F5008427FD /* Products */,
 				A091AC815DEB9A3E26B3294A /* Pods */,
-				7169886BF10443A8F8E43DE4 /* Frameworks */,
+				53C32B052CD561F9D7E48C60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -805,11 +805,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD228A02283908F9008427FD /* Build configuration list for PBXNativeTarget "30-SOPKATHON-iOS" */;
 			buildPhases = (
-				35927D56B134D15D4E344613 /* [CP] Check Pods Manifest.lock */,
+				443AB63EEBE1AABB06374491 /* [CP] Check Pods Manifest.lock */,
 				FD2289EA283908F5008427FD /* Sources */,
 				FD2289EB283908F5008427FD /* Frameworks */,
 				FD2289EC283908F5008427FD /* Resources */,
-				5505F24B5002DB7C86BEDD59 /* [CP] Embed Pods Frameworks */,
+				CB3DC2945E2F1CA95422FF77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -876,7 +876,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		35927D56B134D15D4E344613 /* [CP] Check Pods Manifest.lock */ = {
+		443AB63EEBE1AABB06374491 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -898,7 +898,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5505F24B5002DB7C86BEDD59 /* [CP] Embed Pods Frameworks */ = {
+		CB3DC2945E2F1CA95422FF77 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1122,7 +1122,7 @@
 		};
 		FD228A03283908F9008427FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41CBB54C1815AC83BD45E6B8 /* Pods-30-SOPKATHON-iOS.debug.xcconfig */;
+			baseConfigurationReference = DAEC9533F01617FB965E7736 /* Pods-30-SOPKATHON-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1136,12 +1136,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sopkathon.release.-0-SOPKATHON-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sopkathon.release;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1151,7 +1152,7 @@
 		};
 		FD228A04283908F9008427FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD49FD6D8AAC11A97CB1B1FD /* Pods-30-SOPKATHON-iOS.release.xcconfig */;
+			baseConfigurationReference = 181E7E73C02D546B5E77FF66 /* Pods-30-SOPKATHON-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1165,12 +1166,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sopkathon.release.-0-SOPKATHON-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sopkathon.release;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

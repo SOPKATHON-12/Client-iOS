@@ -8,6 +8,8 @@ target '30-SOPKATHON-iOS' do
   # Pods for 30-SOPKATHON-iOS
   pod 'SnapKit', '~> 5.0.0'
   pod 'SwiftLint'
+  pod 'KakaoSDKLink' # 메시지(카카오링크)
+  pod 'KakaoSDKTemplate' # 메시지 템플릿 
   pod 'KakaoSDKCommon'  # 필수 요소를 담은 공통 모듈
   pod 'KakaoSDKAuth'  # 카카오 로그인
   pod 'KakaoSDKUser'  # 사용자 관리
