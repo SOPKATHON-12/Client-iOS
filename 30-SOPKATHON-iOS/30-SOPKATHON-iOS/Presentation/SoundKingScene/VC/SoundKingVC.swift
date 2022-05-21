@@ -18,7 +18,6 @@ class SoundKingVC: UIViewController {
   var seconds = 5
   var milliseconds = 0
 
-  
   var recorder: AVAudioRecorder!
   var levelTimer = Timer()
   var maxDB = 0
@@ -162,7 +161,7 @@ class SoundKingVC: UIViewController {
     maxDB = max(maxDB, Int(round(power)))
     
     let a = (round(power) - 60) / 15
-    maxLabel.text = String(maxDB)
+    maxLabel.text = "최대 데시벨 : " + String(maxDB)
     
     levelScrollView.setContentOffset(CGPoint(x: CGFloat(a) * screenWidth, y: 0), animated: true)
 
