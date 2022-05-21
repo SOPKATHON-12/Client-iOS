@@ -17,17 +17,22 @@ class SplashVC: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      delayWithSeconds(1) {
+      self.splashIconView.alpha = 0
+      delayWithSeconds(0.5) {
         self.showAnimation()
       }
     }
     
   private func showAnimation() {
     
-    UIView.animate(withDuration: 1, delay: 0) {
-      self.splashIconView.alpha = 0
+    UIView.animate(withDuration: 0.5, delay: 0) {
+      self.splashIconView.alpha = 1
     } completion: { _ in
-      self.moveBaseView()
+      UIView.animate(withDuration: 1, delay: 1.0) {
+        self.splashIconView.alpha = 0
+      } completion: { _ in
+        self.moveBaseView()
+      }
     }
     
   }
