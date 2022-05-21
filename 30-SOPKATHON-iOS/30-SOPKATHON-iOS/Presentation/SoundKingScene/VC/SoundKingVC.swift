@@ -13,6 +13,11 @@ class SoundKingVC: UIViewController {
   
   // MARK: - Vars & Lets Part
   
+  weak var videoTimer: Timer?
+  var minutes = 0
+  var seconds = 5
+  var milliseconds = 0
+
   
   var recorder: AVAudioRecorder!
   var levelTimer = Timer()
@@ -20,6 +25,7 @@ class SoundKingVC: UIViewController {
   
   // MARK: - UI Component Part
   
+  @IBOutlet weak var timerLabel: UILabel!
   @IBOutlet weak var levelScrollView: UIScrollView!
   @IBOutlet weak var lblDecibel: UILabel!
   
@@ -29,13 +35,11 @@ class SoundKingVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     initRecord()
+    startTimer()
     
   }
   
   func initRecord() {
-    
-    
-      
     
     
     switch AVAudioSession.sharedInstance().recordPermission {
@@ -60,6 +64,52 @@ class SoundKingVC: UIViewController {
     }
   }
   
+  
+  func startTimer() {
+
+      videoTimer?.invalidate()
+
+      videoTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { [weak self] _ in
+          self?.timerIsRunning()
+      })
+      RunLoop.current.add(videoTimer!, forMode: RunLoop.Mode.common)
+  }
+
+  func timerIsRunning() {
+
+      showTimer()
+
+      if seconds == 0 {
+          if minutes != 0 {
+              minutes -= 1
+          }
+      }
+
+    if milliseconds == 0 {
+          seconds -= 1
+      }
+
+      if seconds < 0 {
+          seconds = 59
+      }
+    milliseconds -= 1
+      if milliseconds < 0 {
+          milliseconds = 9
+      }
+      if minutes == 0 && seconds == 0 && milliseconds == 0 {
+          showTimer()
+          videoTimer?.invalidate()
+      }
+  }
+
+  func showTimer() {
+   let millisecStr = "\(milliseconds)"
+      let secondsStr = seconds > 9 ? "\(seconds)" : "\(seconds)"
+      let minutesStr = minutes > 9 ? "\(minutes)" : "0\(minutes)"
+
+    timerLabel.text = secondsStr + " : " + millisecStr
+    print(minutesStr,secondsStr,millisecStr)
+  }
   
   func recordNotAllowed() {
     print("permission denied")

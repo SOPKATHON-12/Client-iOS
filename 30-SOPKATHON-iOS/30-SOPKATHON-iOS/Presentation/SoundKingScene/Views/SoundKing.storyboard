@@ -52,6 +52,12 @@
                                     <constraint firstAttribute="width" secondItem="rGF-fq-hJq" secondAttribute="height" multiplier="375:289" id="phh-r0-tBI"/>
                                 </constraints>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsJ-8p-ZeX">
+                                <rect key="frame" x="192.5" y="245" width="29.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="데시벨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyy-LX-b7f">
                                 <rect key="frame" x="185" y="194.5" width="44.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -68,14 +74,17 @@
                             <constraint firstItem="rGF-fq-hJq" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="DVh-l1-I8n"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rGF-fq-hJq" secondAttribute="trailing" id="KxF-1C-976"/>
                             <constraint firstItem="Eyy-LX-b7f" firstAttribute="top" secondItem="mxx-U5-1eH" secondAttribute="bottom" constant="30" id="V7k-uX-R9f"/>
+                            <constraint firstItem="SsJ-8p-ZeX" firstAttribute="top" secondItem="Eyy-LX-b7f" secondAttribute="bottom" constant="30" id="bb5-O5-cW4"/>
                             <constraint firstItem="rGF-fq-hJq" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="fRR-gV-StS"/>
                             <constraint firstItem="mxx-U5-1eH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jNJ-bs-RQd"/>
+                            <constraint firstItem="SsJ-8p-ZeX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="uvn-d2-7XV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lblDecibel" destination="mxx-U5-1eH" id="wxY-ZO-8CR"/>
                         <outlet property="levelScrollView" destination="rGF-fq-hJq" id="ALs-bM-iW4"/>
                         <outlet property="maxLabel" destination="Eyy-LX-b7f" id="qCf-y0-gU9"/>
+                        <outlet property="timerLabel" destination="SsJ-8p-ZeX" id="ZZe-oX-zea"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
