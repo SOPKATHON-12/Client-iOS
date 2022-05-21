@@ -13,12 +13,16 @@ protocol ModuleFactoryProtocol {
   func makeWritingVC() -> WritingVC
   func makeFeedVC() -> FeedVC
   func makeRankingVC() -> RankingVC
+func makeDecibelVC() -> DecibelVC
+    func makeTabVC() -> TabVC
   func makeFeedCalendarNC() -> FeedCalendarNC
   func makefeedCalendarVC() -> FeedCalendarVC
   
 }
 
 final class ModuleFactory: ModuleFactoryProtocol{
+
+    
 
   static var shared = ModuleFactory()
   private init() { }
@@ -54,6 +58,14 @@ final class ModuleFactory: ModuleFactoryProtocol{
   func makeRankingVC() -> RankingVC {
     return RankingVC.controllerFromStoryboard(.ranking)
   }
+    
+    func makeDecibelVC() -> DecibelVC {
+        return DecibelVC.controllerFromStoryboard(.decibel)
+    }
+    
+    func makeTabVC() -> TabVC {
+        return TabVC.controllerFromStoryboard(.tab)
+    }
   
   func makeFeedCalendarNC() -> FeedCalendarNC {
     return FeedCalendarNC.controllerFromStoryboard(.feedCalendar)

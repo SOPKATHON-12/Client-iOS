@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B12CCA0283953D000C99203 /* DecibelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12CC9F283953D000C99203 /* DecibelVC.swift */; };
+		3B12CCA2283953E400C99203 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12CCA1283953E400C99203 /* TabVC.swift */; };
+		3B12CCA428396BA700C99203 /* Decibel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B12CCA328396BA700C99203 /* Decibel.storyboard */; };
+		3B12CCA628396E3400C99203 /* Tab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B12CCA528396E3400C99203 /* Tab.storyboard */; };
+		3B12CCAC2839734800C99203 /* RankingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12CCAA2839734800C99203 /* RankingTVC.swift */; };
+		3B12CCAD2839734800C99203 /* RankingTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B12CCAB2839734800C99203 /* RankingTVC.xib */; };
+		3B12CCB0283978C800C99203 /* RankignDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12CCAF283978C800C99203 /* RankignDataModel.swift */; };
+		3BC7CBEE28398A7B0020B11C /* FeedTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BC7CBEC28398A7B0020B11C /* FeedTVC.xib */; };
+		3BC7CBF028398AAA0020B11C /* FeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC7CBED28398A7B0020B11C /* FeedTVC.swift */; };
 		3F1104935ECC50B2C839497A /* Pods_30_SOPKATHON_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4158DCE63860458F8B8CE1D0 /* Pods_30_SOPKATHON_iOS.framework */; };
-		84F5348828394F960037DC50 /* FeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5348628394F960037DC50 /* FeedTVC.swift */; };
-		84F5348928394F960037DC50 /* FeedTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F5348728394F960037DC50 /* FeedTVC.xib */; };
 		84F5348C283956F40037DC50 /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5348B283956F40037DC50 /* FeedDataModel.swift */; };
 		FD166A7F2839761D008C11B0 /* crayon.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FD166A7D28397597008C11B0 /* crayon.TTF */; };
 		FD2289F2283908F5008427FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2289F1283908F5008427FD /* AppDelegate.swift */; };
@@ -106,6 +113,15 @@
 
 /* Begin PBXFileReference section */
 		139AFB3CA9926AB3606DF95E /* Pods-30-SOPKATHON-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.debug.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3B12CC9F283953D000C99203 /* DecibelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecibelVC.swift; sourceTree = "<group>"; };
+		3B12CCA1283953E400C99203 /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
+		3B12CCA328396BA700C99203 /* Decibel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Decibel.storyboard; sourceTree = "<group>"; };
+		3B12CCA528396E3400C99203 /* Tab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab.storyboard; sourceTree = "<group>"; };
+		3B12CCAA2839734800C99203 /* RankingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTVC.swift; sourceTree = "<group>"; };
+		3B12CCAB2839734800C99203 /* RankingTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTVC.xib; sourceTree = "<group>"; };
+		3B12CCAF283978C800C99203 /* RankignDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankignDataModel.swift; sourceTree = "<group>"; };
+		3BC7CBEC28398A7B0020B11C /* FeedTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTVC.xib; sourceTree = "<group>"; };
+		3BC7CBED28398A7B0020B11C /* FeedTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTVC.swift; sourceTree = "<group>"; };
 		4158DCE63860458F8B8CE1D0 /* Pods_30_SOPKATHON_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30_SOPKATHON_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CDEBCC8D5309B8628A433E3 /* Pods-30-SOPKATHON-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30-SOPKATHON-iOS.release.xcconfig"; path = "Target Support Files/Pods-30-SOPKATHON-iOS/Pods-30-SOPKATHON-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		84F5348628394F960037DC50 /* FeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTVC.swift; sourceTree = "<group>"; };
@@ -218,21 +234,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84F5348428394F0B0037DC50 /* Cell */ = {
+		3B12CCA82839730400C99203 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				84F5348528394F790037DC50 /* TVC */,
+				3B12CCA92839730B00C99203 /* TVC */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		84F5348528394F790037DC50 /* TVC */ = {
+		3B12CCA92839730B00C99203 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				3B12CCAF283978C800C99203 /* RankignDataModel.swift */,
+				3B12CCAA2839734800C99203 /* RankingTVC.swift */,
+				3B12CCAB2839734800C99203 /* RankingTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		3BC7CBEA28398A7B0020B11C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3BC7CBEB28398A7B0020B11C /* TVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3BC7CBEB28398A7B0020B11C /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				3BC7CBEC28398A7B0020B11C /* FeedTVC.xib */,
+				3BC7CBED28398A7B0020B11C /* FeedTVC.swift */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		3BF83C05283988DC009AF917 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				84F5348628394F960037DC50 /* FeedTVC.swift */,
 				84F5348728394F960037DC50 /* FeedTVC.xib */,
 			);
-			path = TVC;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		84F5348A283956E70037DC50 /* Feed */ = {
@@ -275,6 +318,7 @@
 				FD2289EF283908F5008427FD /* Products */,
 				A091AC815DEB9A3E26B3294A /* Pods */,
 				9D429DF0FC2ACB2521DE9988 /* Frameworks */,
+				3BF83C05283988DC009AF917 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -708,7 +752,7 @@
 		FD228AAB283924EF008427FD /* FeedScene */ = {
 			isa = PBXGroup;
 			children = (
-				84F5348428394F0B0037DC50 /* Cell */,
+				3BC7CBEA28398A7B0020B11C /* Cell */,
 				FD228ABB28392562008427FD /* VC */,
 				FD228ABA2839255F008427FD /* Views */,
 			);
@@ -718,6 +762,7 @@
 		FD228AAC283924F6008427FD /* RankingScene */ = {
 			isa = PBXGroup;
 			children = (
+				3B12CCA82839730400C99203 /* Cell */,
 				FD228AB92839255B008427FD /* VC */,
 				FD228AB828392557008427FD /* VIews */,
 			);
@@ -803,6 +848,8 @@
 			isa = PBXGroup;
 			children = (
 				FD228ABE283925E8008427FD /* Ranking.storyboard */,
+				3B12CCA328396BA700C99203 /* Decibel.storyboard */,
+				3B12CCA528396E3400C99203 /* Tab.storyboard */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -811,6 +858,8 @@
 			isa = PBXGroup;
 			children = (
 				FD228ABC283925E1008427FD /* RankingVC.swift */,
+				3B12CC9F283953D000C99203 /* DecibelVC.swift */,
+				3B12CCA1283953E400C99203 /* TabVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -966,13 +1015,17 @@
 				FD9490972839855200390E85 /* FeedCalendar.storyboard in Resources */,
 				FD166A7F2839761D008C11B0 /* crayon.TTF in Resources */,
 				FD228A8628391F5B008427FD /* Base.storyboard in Resources */,
+				3B12CCA428396BA700C99203 /* Decibel.storyboard in Resources */,
 				FD228AC728392654008427FD /* Writing.storyboard in Resources */,
 				FD228A8828391F5B008427FD /* TabbarIcon.xib in Resources */,
+				3BC7CBEE28398A7B0020B11C /* FeedTVC.xib in Resources */,
 				FD228ABF283925E8008427FD /* Ranking.storyboard in Resources */,
+				3B12CCA628396E3400C99203 /* Tab.storyboard in Resources */,
 				FD2289FB283908F9008427FD /* Assets.xcassets in Resources */,
 				FDDE355D28399A460093CD33 /* Main.storyboard in Resources */,
 				84F5348928394F960037DC50 /* FeedTVC.xib in Resources */,
 				FD228ACD28392685008427FD /* TouchKing.storyboard in Resources */,
+				3B12CCAD2839734800C99203 /* RankingTVC.xib in Resources */,
 				FD228A8A28391F5B008427FD /* TabbarView.xib in Resources */,
 				FD228AE028395DB9008427FD /* Splash.storyboard in Resources */,
 			);
@@ -1034,6 +1087,7 @@
 				FD228A6028391F1D008427FD /* calculateTopInset.swift in Sources */,
 				FD228A8528391F5B008427FD /* BaseVC.swift in Sources */,
 				FD228AA428392105008427FD /* ColorLiterals.swift in Sources */,
+				3B12CCB0283978C800C99203 /* RankignDataModel.swift in Sources */,
 				FD228A5928391F1D008427FD /* PanDirectionGesture.swift in Sources */,
 				FD228A5A28391F1D008427FD /* calculatePastTime.swift in Sources */,
 				FD228A97283920FE008427FD /* setTextLineHeight + UILabel.swift in Sources */,
@@ -1076,6 +1130,8 @@
 				FD228A5728391F1D008427FD /* addToolBar.swift in Sources */,
 				FDDE356328399F1B0093CD33 /* RankingEntity.swift in Sources */,
 				FD228A2728390B41008427FD /* FirebaseServiceProtocol.swift in Sources */,
+				3B12CCA0283953D000C99203 /* DecibelVC.swift in Sources */,
+				3B12CCAC2839734800C99203 /* RankingTVC.swift in Sources */,
 				FD228A95283920FE008427FD /* addSubViewFromNib.swift in Sources */,
 				FD228ACF28392691008427FD /* TouchKingVC.swift in Sources */,
 				FD228AA228392105008427FD /* StringLiterals.swift in Sources */,
@@ -1083,6 +1139,7 @@
 				FD228AC328392628008427FD /* FeedVC.swift in Sources */,
 				FD228A8E28391F5B008427FD /* SampleViewModel.swift in Sources */,
 				FD228A2F28390B41008427FD /* CoordinatorFinishOutput.swift in Sources */,
+				3B12CCA2283953E400C99203 /* TabVC.swift in Sources */,
 				FD228A5328391F1D008427FD /* manageObserverAction.swift in Sources */,
 				FD228A5C28391F1D008427FD /* pressAction.swift in Sources */,
 				FD228ABD283925E1008427FD /* RankingVC.swift in Sources */,
@@ -1096,6 +1153,7 @@
 				FD228A8728391F5B008427FD /* TabbarIcon.swift in Sources */,
 				FD228A2D28390B41008427FD /* BaseCoordinator.swift in Sources */,
 				FDDE356128399EC10093CD33 /* DayDetailEntity.swift in Sources */,
+				3BC7CBF028398AAA0020B11C /* FeedTVC.swift in Sources */,
 				FD228A3428390B41008427FD /* CoordinatorFactory.swift in Sources */,
 				FD228A2928390B41008427FD /* RuntimeProviderType.swift in Sources */,
 				FDDE35672839A0200093CD33 /* WriteCommentService.swift in Sources */,
@@ -1104,7 +1162,6 @@
 				FD228A3028390B41008427FD /* Presentable.swift in Sources */,
 				FDDE356528399F9B0093CD33 /* RankService.swift in Sources */,
 				FD228A5828391F1D008427FD /* setDefaultFonts.swift in Sources */,
-				84F5348828394F960037DC50 /* FeedTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
