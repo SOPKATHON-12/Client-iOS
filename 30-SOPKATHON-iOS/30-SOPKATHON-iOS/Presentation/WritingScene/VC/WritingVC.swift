@@ -18,11 +18,14 @@ class WritingVC: UIViewController {
     @IBOutlet weak var upsetLabel: UILabel!
     @IBOutlet weak var userImgView: UIImageView!
     @IBOutlet weak var commentTextField: UITextField!
-    
-  // MARK: - Life Cycle Part
+    @IBOutlet weak var finishButton: UIButton!
+    // MARK: - Life Cycle Part
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        writingView.layer.cornerRadius = 10
+        commentTextField.layer.cornerRadius = 10
          
     }
     
