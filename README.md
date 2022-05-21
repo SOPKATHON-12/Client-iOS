@@ -53,3 +53,18 @@ https://flaxen-warlock-70e.notion.site/ec5a0d076e794b12b45f507708533a35
 | :--: | :-----: | :--: |
 | UI | ✔️ | 지훈, 주현, 윤서 |
 | 서버 연결 | ✔️ | 지훈 |
+
+## 🥹 아무튼 추억
+<details>
+<summary> 😎 </summary>
+<div markdown="1">     
+
+<img width="327" alt="image" src="https://user-images.githubusercontent.com/58043306/169671969-e2fa6841-959d-4b2b-811b-45bd4d93b98f.png">
+
+<img width="327" alt="image" src="https://user-images.githubusercontent.com/58043306/169671998-8c739f31-003c-4f4e-90a5-e6af831d7804.jpeg">
+	
+<img width="327" alt="image" src="https://user-images.githubusercontent.com/58043306/169671978-5e04cad7-a618-42a2-a894-720daaa48a23.jpeg">
+
+
+</div>
+</details>
