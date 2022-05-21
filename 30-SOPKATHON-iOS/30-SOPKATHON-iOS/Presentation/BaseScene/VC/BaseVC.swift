@@ -22,10 +22,17 @@ class BaseVC: UIViewController {
   
   // MARK: - Life Cycle Part
   override func viewDidLoad() {
+    self.sceneContainerView.alpha = 0
+    self.tabbar.alpha = 0
     super.viewDidLoad()
     configureTabbarDelegate()
     tabbarClicked(.home)
+    configureUI()
     addObserver()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    self.showAnimation()
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -40,6 +47,13 @@ class BaseVC: UIViewController {
   open override func didMove(toParent parent: UIViewController?) {
     navigationController?.fixInteractivePopGestureRecognizer(delegate: self)
   }
+  
+  private func showAnimation() {
+    UIView.animate(withDuration: 1, delay: 0) {
+      self.sceneContainerView.alpha = 1
+      self.tabbar.alpha = 1
+    }
+  }
 }
 
 // MARK: - 탭바를 제외한 Scene 세팅하는 부분
@@ -47,6 +61,11 @@ class BaseVC: UIViewController {
 extension BaseVC: MainTabbarDelegate{
   private func configureTabbarDelegate(){
     tabbar.delegate = self
+  }
+  
+  private func configureUI() {
+    tabbar.layer.cornerRadius = 15
+    tabbar.layer.applyShadow(color: .black, alpha: 0.25, x: 2, y: 3, blur: 4, spread: 0)
   }
   
   func tabbarClicked(_ type: TabbarIconType) {

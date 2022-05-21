@@ -8,6 +8,7 @@
 import UIKit
 
 enum Storyboards: String {
+  case splash = "Splash"
   case base = "Base"
   case home = "Home"
   case soundKing = "SoundKing"

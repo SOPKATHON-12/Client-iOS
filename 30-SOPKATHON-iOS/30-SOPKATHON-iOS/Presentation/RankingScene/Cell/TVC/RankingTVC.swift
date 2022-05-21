@@ -21,6 +21,13 @@ class RankingTVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        contentView.layer.cornerRadius = 10
+        
+    }
+    
+    override func layoutSubviews() {
+      super.layoutSubviews()
+      contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 7, right: 0))
     }
     
     func setData(_ rankingData: RankingDataModel){

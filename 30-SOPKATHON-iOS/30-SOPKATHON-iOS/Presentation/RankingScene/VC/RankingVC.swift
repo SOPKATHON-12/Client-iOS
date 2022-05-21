@@ -36,6 +36,7 @@ class RankingVC: UIViewController {
         
         setupUI()
         setupPageVC()
+        
     }
     
   // MARK: - IBAction Part

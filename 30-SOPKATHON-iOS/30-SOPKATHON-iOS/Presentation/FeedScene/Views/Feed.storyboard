@@ -17,27 +17,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHr-77-diR">
-                                <rect key="frame" x="190" y="437.5" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="miT-g1-O4V">
+                                <rect key="frame" x="148" y="103" width="118" height="157.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uw-qR-cpP">
+                                        <rect key="frame" x="38.5" y="0.0" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n0J-Tt-jPx">
+                                        <rect key="frame" x="0.0" y="40" width="118" height="117"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="118" id="joX-7z-AHq"/>
+                                            <constraint firstAttribute="width" constant="118" id="knS-Dt-kce"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="59"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1qg-FL-y9a">
+                                <rect key="frame" x="0.0" y="276.5" width="414" height="585.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yHr-77-diR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ina-yG-dDe"/>
-                            <constraint firstItem="yHr-77-diR" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="u2W-Es-dBo"/>
+                            <constraint firstItem="miT-g1-O4V" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="103" id="6Bv-am-lCZ"/>
+                            <constraint firstItem="miT-g1-O4V" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Lb4-ei-j1Y"/>
+                            <constraint firstItem="1qg-FL-y9a" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PJ2-5w-LUw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1qg-FL-y9a" secondAttribute="trailing" id="f4a-8j-uzW"/>
+                            <constraint firstItem="1qg-FL-y9a" firstAttribute="top" secondItem="miT-g1-O4V" secondAttribute="bottom" constant="16" id="oco-gr-R0i"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1qg-FL-y9a" secondAttribute="bottom" id="ygd-3s-yUI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="feedTV" destination="1qg-FL-y9a" id="DXl-ru-Nas"/>
+                        <outlet property="gaugeImageView" destination="n0J-Tt-jPx" id="87u-Vi-lo8"/>
+                        <outlet property="monthLabel" destination="6uw-qR-cpP" id="lbv-7I-v2N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="104"/>
+            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
