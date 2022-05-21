@@ -13,8 +13,8 @@ class RankingVC: UIViewController {
     private let pageVC = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
     
     private let contents: [UIViewController] = [
-        DecibelVC(),
-        TabVC()
+        ModuleFactory.shared.makeDecibelVC(),
+        ModuleFactory.shared.makeTabVC()
     ]
 
     private var currentIndex: Int = 0
