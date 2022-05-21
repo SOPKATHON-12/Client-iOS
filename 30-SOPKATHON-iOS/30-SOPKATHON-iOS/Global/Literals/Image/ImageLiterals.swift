@@ -13,13 +13,13 @@ struct ImageLiterals{
   
   struct TabBar{
     
-    static let home = UIImage(named: "tab-mypage")!
+    static let home = UIImage(named: "ic_home")!
     static let homeSelected = UIImage(named: "tab-mypage-clicked")!
     
-    static let feed = UIImage(named: "tab-home")!
+    static let feed = UIImage(named: "ic_feed")!
     static let feedSelected = UIImage(named: "tab-home-clicked")!
     
-    static let ranking = UIImage(named: "tab-mypage")!
+    static let ranking = UIImage(named: "ic_rank")!
     static let rankingSelected = UIImage(named: "tab-mypage-clicked")!
   }
 
