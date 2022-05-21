@@ -109,20 +109,11 @@ class SoundKingVC: UIViewController {
     
     let level = recorder.averagePower(forChannel: 0)
     let power = pow(10.0, level / 20.0) * 70.0  + 55
+    let powerInt = String(Int(round(power)))
+    print("level",powerInt)
+    lblDecibel.text = powerInt
     
-    print("level",power)
-    lblDecibel.text = String(power)
-    
-    // do whatever you want with isLoud
-    if level < -48 {
-      lblLoudState.text = "조용함"
-    } else if level < -30 {
-      lblLoudState.text = "약간의 소음 있음"
-    } else if level < -10 {
-      lblLoudState.text = "통상적인 소음 있음"
-    } else {
-      lblLoudState.text = "시끄러움"
-    }
+
     
   }
   
