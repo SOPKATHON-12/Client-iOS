@@ -17,20 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9f-81-NTJ">
-                                <rect key="frame" x="184.5" y="437.5" width="45.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="8DM-1Z-uhV">
+                                <rect key="frame" x="37" y="141" width="340" height="614"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNl-q6-d8Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="290"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="340" id="Y9K-Lh-5bX"/>
+                                            <constraint firstAttribute="height" constant="290" id="jQO-rK-7tV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="데시벨 버튼"/>
+                                        <connections>
+                                            <action selector="tapDecibelButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CwT-bq-jwk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60r-oe-uGX">
+                                        <rect key="frame" x="0.0" y="324" width="340" height="290"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="연속 탭 버튼"/>
+                                        <connections>
+                                            <action selector="tapTouchButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qux-Ti-LYH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="60r-oe-uGX" firstAttribute="width" secondItem="tNl-q6-d8Q" secondAttribute="width" id="LvO-cx-3Gk"/>
+                                    <constraint firstItem="60r-oe-uGX" firstAttribute="height" secondItem="tNl-q6-d8Q" secondAttribute="height" id="xO4-4A-qFG"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="x9f-81-NTJ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="GYC-RT-Nfr"/>
-                            <constraint firstItem="x9f-81-NTJ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="R0J-PS-iX3"/>
+                            <constraint firstItem="8DM-1Z-uhV" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="CnA-Dx-BfK"/>
+                            <constraint firstItem="8DM-1Z-uhV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hPq-h3-VFV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="decibelButton" destination="tNl-q6-d8Q" id="TvO-a3-YdS"/>
+                        <outlet property="touchButton" destination="60r-oe-uGX" id="9KF-jM-4gH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
