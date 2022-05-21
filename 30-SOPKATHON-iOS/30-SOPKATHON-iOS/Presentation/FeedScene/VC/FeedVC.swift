@@ -9,9 +9,6 @@ import UIKit
 
 class FeedVC: UIViewController {
     
-    // MARK: - Vars & Lets Part
-    
-    
     // MARK: - UI Component Part
     @IBOutlet weak var gaugeImageView: UIImageView!
     @IBOutlet weak var monthLabel: UILabel!
@@ -22,9 +19,8 @@ class FeedVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTVC()
+        setView()
     }
-    
-    // MARK: - IBAction Part
 }
 
 // MARK: - Custom Method Part
@@ -34,12 +30,17 @@ extension FeedVC {
         feedTV.delegate = self
         feedTV.dataSource = self
     }
+    
+    private func setView() {
+        self.view.backgroundColor = UIColor(red: 0.961, green: 0.961, blue: 0.961, alpha: 1)
+        self.feedTV.backgroundColor = UIColor(red: 0.961, green: 0.961, blue: 0.961, alpha: 1)
+    }
 }
 
 // MARK: - UITableViewDelegate
 extension FeedVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 104
+        return 97
     }
 }
 

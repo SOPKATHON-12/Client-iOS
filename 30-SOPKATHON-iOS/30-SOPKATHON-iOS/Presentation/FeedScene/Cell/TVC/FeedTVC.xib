@@ -4,9 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,61 +18,55 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Iw-ST-tEq">
-                        <rect key="frame" x="16" y="0.0" width="268" height="94"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <rect key="frame" x="18" y="0.0" width="266" height="94"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angry_icon_4" translatesAutoresizingMaskIntoConstraints="NO" id="cCE-wC-HQr">
+                                <rect key="frame" x="18" y="17" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="jpa-qq-H33"/>
+                                    <constraint firstAttribute="height" constant="60" id="mWs-7J-RDq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-Cg-V7f">
+                                <rect key="frame" x="90" y="17" width="44" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jma-c6-DKF">
+                                <rect key="frame" x="90" y="38.5" width="158" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jma-c6-DKF" firstAttribute="leading" secondItem="cCE-wC-HQr" secondAttribute="trailing" constant="12" id="4FB-4M-Rrq"/>
+                            <constraint firstItem="6pN-Cg-V7f" firstAttribute="leading" secondItem="cCE-wC-HQr" secondAttribute="trailing" constant="12" id="GAV-UD-XYx"/>
+                            <constraint firstItem="cCE-wC-HQr" firstAttribute="centerY" secondItem="0Iw-ST-tEq" secondAttribute="centerY" id="GvL-lC-omU"/>
+                            <constraint firstItem="jma-c6-DKF" firstAttribute="top" secondItem="6pN-Cg-V7f" secondAttribute="bottom" id="Gvt-VU-VYZ"/>
+                            <constraint firstItem="cCE-wC-HQr" firstAttribute="leading" secondItem="0Iw-ST-tEq" secondAttribute="leading" constant="18" id="Uxm-PM-h4v"/>
+                            <constraint firstItem="6pN-Cg-V7f" firstAttribute="top" secondItem="cCE-wC-HQr" secondAttribute="firstBaseline" id="akF-K0-W0W"/>
+                            <constraint firstAttribute="trailing" secondItem="jma-c6-DKF" secondAttribute="trailing" constant="18" id="pv6-SW-L6G"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="30"/>
+                                <integer key="value" value="13"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QfL-dL-3lM">
-                        <rect key="frame" x="30" y="11" width="133.5" height="76"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cCE-wC-HQr">
-                                <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="jpa-qq-H33"/>
-                                    <constraint firstAttribute="height" constant="76" id="mWs-7J-RDq"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="38"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D8L-iv-hui">
-                                <rect key="frame" x="92" y="17.5" width="41.5" height="41"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-Cg-V7f">
-                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jma-c6-DKF">
-                                        <rect key="frame" x="0.0" y="20.5" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                    </stackView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="0Iw-ST-tEq" secondAttribute="bottom" constant="5" id="01b-dH-awa"/>
                     <constraint firstItem="0Iw-ST-tEq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1ri-XG-2YQ"/>
-                    <constraint firstItem="QfL-dL-3lM" firstAttribute="leading" secondItem="0Iw-ST-tEq" secondAttribute="leading" constant="14" id="DXh-US-Lh6"/>
-                    <constraint firstItem="0Iw-ST-tEq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gTU-3t-DAY"/>
-                    <constraint firstItem="QfL-dL-3lM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="qXs-r8-icb"/>
+                    <constraint firstItem="0Iw-ST-tEq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="dBv-W0-Gx3"/>
                     <constraint firstAttribute="trailing" secondItem="0Iw-ST-tEq" secondAttribute="trailing" constant="16" id="weR-1L-qmA"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="backView" destination="0Iw-ST-tEq" id="Not-MT-wHa"/>
                 <outlet property="decibelLabel" destination="6pN-Cg-V7f" id="j25-s1-hb2"/>
                 <outlet property="profileImageView" destination="cCE-wC-HQr" id="wTm-Hu-D9g"/>
                 <outlet property="reasonLabel" destination="jma-c6-DKF" id="YIi-iG-1SZ"/>
@@ -83,11 +75,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="angry_icon_4" width="376" height="376"/>
     </resources>
 </document>
