@@ -15,7 +15,7 @@ class SoundKingVC: UIViewController {
   
   weak var videoTimer: Timer?
   var minutes = 0
-  var seconds = 5
+  var seconds = 30
   var milliseconds = 0
 
   var recorder: AVAudioRecorder!
@@ -28,7 +28,6 @@ class SoundKingVC: UIViewController {
   @IBOutlet weak var levelScrollView: UIScrollView!
   @IBOutlet weak var lblDecibel: UILabel!
   
-  @IBOutlet weak var maxLabel: UILabel!
   // MARK: - Life Cycle Part
   
   override func viewDidLoad() {
@@ -103,10 +102,10 @@ class SoundKingVC: UIViewController {
 
   func showTimer() {
    let millisecStr = "\(milliseconds)"
-      let secondsStr = seconds > 9 ? "\(seconds)" : "\(seconds)"
+      let secondsStr = seconds > 9 ? "\(seconds)" : "0\(seconds)"
       let minutesStr = minutes > 9 ? "\(minutes)" : "0\(minutes)"
 
-    timerLabel.text = secondsStr + " : " + millisecStr
+    timerLabel.text = minutesStr + ". " + secondsStr + ". " + millisecStr
     print(minutesStr,secondsStr,millisecStr)
   }
   
@@ -161,7 +160,7 @@ class SoundKingVC: UIViewController {
     maxDB = max(maxDB, Int(round(power)))
     
     let a = (round(power) - 60) / 12
-    maxLabel.text = "최대 데시벨 : " + String(maxDB)
+//    maxLabel.text = "최대 데시벨 : " + String(maxDB)
     
     levelScrollView.setContentOffset(CGPoint(x: CGFloat(a) * screenWidth, y: 0), animated: true)
 

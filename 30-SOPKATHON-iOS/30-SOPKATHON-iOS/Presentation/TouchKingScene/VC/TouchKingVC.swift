@@ -11,10 +11,9 @@ class TouchKingVC: UIViewController {
   
   // MARK: - Vars & Lets Part
 
-
   weak var videoTimer: Timer?
   var minutes = 0
-  var seconds = 10
+  var seconds = 60
   var milliseconds = 0
   
   var isTimerValid = false
@@ -42,7 +41,7 @@ class TouchKingVC: UIViewController {
   @IBAction func targetButtonsClicked(_ sender: Any) {
     if isTimerValid {
       UIView.animate(withDuration: 0.1) {
-        self.angryIconView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        self.angryIconView.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
       } completion: { _ in
         UIView.animate(withDuration: 0.1) {
           self.angryIconView.transform = .identity
