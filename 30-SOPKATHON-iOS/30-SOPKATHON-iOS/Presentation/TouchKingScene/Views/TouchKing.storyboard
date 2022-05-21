@@ -20,6 +20,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21J-GL-264">
                                 <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angry_icon_0" translatesAutoresizingMaskIntoConstraints="NO" id="F8V-vt-fiw">
+                                        <rect key="frame" x="39.5" y="39.5" width="221" height="221"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="F8V-vt-fiw" secondAttribute="height" multiplier="1:1" id="vUk-cY-QNq"/>
+                                        </constraints>
+                                    </imageView>
                                     <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuH-Ea-8lr">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -28,10 +34,11 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="2Xm-3T-G3K"/>
                                     <constraint firstAttribute="width" constant="300" id="2s9-VZ-DZL"/>
+                                    <constraint firstItem="F8V-vt-fiw" firstAttribute="centerY" secondItem="21J-GL-264" secondAttribute="centerY" id="MWW-33-yxC"/>
+                                    <constraint firstItem="F8V-vt-fiw" firstAttribute="centerX" secondItem="21J-GL-264" secondAttribute="centerX" id="NhY-9U-6iI"/>
                                     <constraint firstItem="QuH-Ea-8lr" firstAttribute="top" secondItem="21J-GL-264" secondAttribute="top" id="YmL-26-nt1"/>
                                     <constraint firstItem="QuH-Ea-8lr" firstAttribute="leading" secondItem="21J-GL-264" secondAttribute="leading" id="gkm-KN-sgo"/>
                                     <constraint firstAttribute="trailing" secondItem="QuH-Ea-8lr" secondAttribute="trailing" id="jq9-Xv-zFm"/>
@@ -39,8 +46,11 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KE2-Oh-zfu">
-                                <rect key="frame" x="196" y="205" width="22.5" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <rect key="frame" x="179" y="166.5" width="56" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="OKl-9I-Sn3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="91"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -57,27 +67,27 @@
                             <constraint firstItem="KE2-Oh-zfu" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4VV-8V-ADQ"/>
                             <constraint firstItem="21J-GL-264" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6LE-tH-Rds"/>
                             <constraint firstItem="21J-GL-264" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="HaR-NC-2WL"/>
-                            <constraint firstItem="21J-GL-264" firstAttribute="top" secondItem="KE2-Oh-zfu" secondAttribute="bottom" constant="50" id="fWi-9e-EXH"/>
+                            <constraint firstItem="KE2-Oh-zfu" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-220" id="OyR-DY-Q6W"/>
+                            <constraint firstItem="F8V-vt-fiw" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="200/375" id="sfD-Ls-4Vs"/>
                             <constraint firstItem="6Bb-d2-6uN" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vfl-Vi-exn"/>
                             <constraint firstItem="6Bb-d2-6uN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="zzb-8J-q1p"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="angryIconView" destination="F8V-vt-fiw" id="buj-gd-lnt"/>
                         <outlet property="countLabel" destination="KE2-Oh-zfu" id="F5N-JI-bOi"/>
                         <outlet property="timerLabel" destination="6Bb-d2-6uN" id="Rd2-WM-vCK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="104"/>
+            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="angry_icon_0" width="376" height="376"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

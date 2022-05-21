@@ -10,11 +10,11 @@ import UIKit
 class TouchKingVC: UIViewController {
   
   // MARK: - Vars & Lets Part
-  var fingers = [String?](repeating: "", count: 5)
+
 
   weak var videoTimer: Timer?
   var minutes = 0
-  var seconds = 30
+  var seconds = 10
   var milliseconds = 0
   
   var isTimerValid = false
@@ -26,6 +26,7 @@ class TouchKingVC: UIViewController {
   
   // MARK: - UI Component Part
   
+  @IBOutlet weak var angryIconView: UIImageView!
   @IBOutlet weak var timerLabel: UILabel!
   @IBOutlet weak var countLabel: UILabel!
   
@@ -40,11 +41,36 @@ class TouchKingVC: UIViewController {
   
   @IBAction func targetButtonsClicked(_ sender: Any) {
     if isTimerValid {
+      UIView.animate(withDuration: 0.1) {
+        self.angryIconView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+      } completion: { _ in
+        UIView.animate(withDuration: 0.1) {
+          self.angryIconView.transform = .identity
+        }
+      }
       makeVibrate(degree: .medium)
       count += 1
+      makeAngryIcon()
     }
   }
   // MARK: - Custom Method Part
+  
+  private func makeAngryIcon() {
+    switch (count) {
+      case 0 ... 10 :
+        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon0
+        
+      case 11 ... 40 :
+        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon1
+        
+      case 41 ... 70 :
+        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon2
+        
+      default :
+        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon3
+
+    }
+  }
   
   
   // MARK: - @objc Function Part
