@@ -149,7 +149,7 @@ class SoundKingVC: UIViewController {
     recorder.record()
     
     // 타이머는 main thread 에서 실행됨
-    levelTimer = Timer.scheduledTimer(timeInterval: 0.03, target: self, selector: #selector(levelTimerCallback), userInfo: nil, repeats: true)
+    levelTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(levelTimerCallback), userInfo: nil, repeats: true)
   }
   
   @objc func levelTimerCallback() {
@@ -160,7 +160,7 @@ class SoundKingVC: UIViewController {
     let powerInt = String(Int(round(power)))
     maxDB = max(maxDB, Int(round(power)))
     
-    let a = (round(power) - 60) / 15
+    let a = (round(power) - 60) / 12
     maxLabel.text = "최대 데시벨 : " + String(maxDB)
     
     levelScrollView.setContentOffset(CGPoint(x: CGFloat(a) * screenWidth, y: 0), animated: true)
