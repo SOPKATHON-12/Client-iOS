@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -23,14 +23,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="데시벨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxx-U5-1eH">
+                                <rect key="frame" x="185" y="144" width="44.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTs-zi-vDO">
+                                <rect key="frame" x="186" y="215" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mxx-U5-1eH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="0FZ-SK-Pr6"/>
+                            <constraint firstItem="UTs-zi-vDO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Alr-hb-1kG"/>
                             <constraint firstItem="doy-ky-Q5U" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="aYI-eP-viN"/>
+                            <constraint firstItem="mxx-U5-1eH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jNJ-bs-RQd"/>
+                            <constraint firstItem="UTs-zi-vDO" firstAttribute="top" secondItem="mxx-U5-1eH" secondAttribute="bottom" constant="50" id="pD1-h7-FmS"/>
                             <constraint firstItem="doy-ky-Q5U" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tid-S1-gaL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblDecibel" destination="mxx-U5-1eH" id="wxY-ZO-8CR"/>
+                        <outlet property="lblLoudState" destination="UTs-zi-vDO" id="7RV-9Y-ccX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
