@@ -23,4 +23,11 @@ struct ImageLiterals{
     static let rankingSelected = UIImage(named: "tab-mypage-clicked")!
   }
 
+  struct MainIcon {
+    static let angryIcon0 = UIImage(named: "angry_icon_0")!
+    static let angryIcon1 = UIImage(named: "angry_icon_1")!
+    static let angryIcon2 = UIImage(named: "angry_icon_2")!
+    static let angryIcon3 = UIImage(named: "angry_icon_3")!
+    static let angryIcon4 = UIImage(named: "angry_icon_4")!
+  }
 }

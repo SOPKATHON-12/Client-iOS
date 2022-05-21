@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObY-xt-AuG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplashVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="Y6W-OH-hqX" customClass="SplashVC" customModule="_0_SOPKATHON_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_view" translatesAutoresizingMaskIntoConstraints="NO" id="9id-0A-tZ0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5Q3-8v-kw5">
+                                <rect key="frame" x="124" y="365" width="166" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Q3-8v-kw5" secondAttribute="height" multiplier="1:1" id="n3n-Z0-lVd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9id-0A-tZ0" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="79e-yw-1Yr"/>
+                            <constraint firstItem="5Q3-8v-kw5" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="156/390" id="9Ct-HP-mBu"/>
+                            <constraint firstItem="9id-0A-tZ0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="R1d-Qp-Zss"/>
+                            <constraint firstItem="9id-0A-tZ0" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="d8T-Ou-FZe"/>
+                            <constraint firstItem="5Q3-8v-kw5" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="fWT-Jx-Efr"/>
+                            <constraint firstItem="5Q3-8v-kw5" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hov-vB-WCU"/>
+                            <constraint firstAttribute="bottom" secondItem="9id-0A-tZ0" secondAttribute="bottom" id="mok-Jf-Fux"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HFm-dL-MjV"/>
+                    <connections>
+                        <outlet property="splashIconView" destination="5Q3-8v-kw5" id="X9P-56-r1B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902.89855072463774" y="103.79464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MpP-cg-g7p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ObY-xt-AuG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZYV-es-RC2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="kG8-sS-hij"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HeU-Q7-Ww6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2463768115942031" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main_icon" width="156" height="161"/>
+        <image name="splash_view" width="390" height="844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
