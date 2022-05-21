@@ -13,8 +13,12 @@ class WritingVC: UIViewController {
 
 
   // MARK: - UI Component Part
-
-  
+    @IBOutlet weak var writingView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var upsetLabel: UILabel!
+    @IBOutlet weak var userImgView: UIImageView!
+    @IBOutlet weak var commentTextField: UITextField!
+    
   // MARK: - Life Cycle Part
   
     override func viewDidLoad() {
@@ -23,8 +27,10 @@ class WritingVC: UIViewController {
     }
     
   // MARK: - IBAction Part
-
-  
+    @IBAction func writeFinishButton(_ sender: Any) {
+    }
+    
+    
   // MARK: - Custom Method Part
 
   
