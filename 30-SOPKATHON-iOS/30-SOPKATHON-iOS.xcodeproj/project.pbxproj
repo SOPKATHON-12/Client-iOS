@@ -84,6 +84,9 @@
 		FD228ACF28392691008427FD /* TouchKingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228ACE28392691008427FD /* TouchKingVC.swift */; };
 		FD228AD1283926A0008427FD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AD0283926A0008427FD /* HomeVC.swift */; };
 		FD228AD5283926B2008427FD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD228AD4283926B2008427FD /* Home.storyboard */; };
+		FD228ADE28395D89008427FD /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228ADD28395D89008427FD /* SplashVC.swift */; };
+		FD228AE028395DB9008427FD /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD228ADF28395DB9008427FD /* Splash.storyboard */; };
+		FD228AE228395EB8008427FD /* delayWithSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AE128395EB8008427FD /* delayWithSeconds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -168,6 +171,9 @@
 		FD228ACE28392691008427FD /* TouchKingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchKingVC.swift; sourceTree = "<group>"; };
 		FD228AD0283926A0008427FD /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FD228AD4283926B2008427FD /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FD228ADD28395D89008427FD /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		FD228ADF28395DB9008427FD /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		FD228AE128395EB8008427FD /* delayWithSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delayWithSeconds.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +263,7 @@
 		FD228A0728390ABE008427FD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FD228AD628395D31008427FD /* SplashScene */,
 				FD228A7328391F5B008427FD /* BaseScene */,
 				FD228A7E28391F5B008427FD /* HomeScene */,
 				FD228AAF2839251C008427FD /* TouchKingScene */,
@@ -306,6 +313,7 @@
 				FD228A4C28391F1D008427FD /* setImage.swift */,
 				FD228A4E28391F1D008427FD /* showNetworkAlert.swift */,
 				FD228A5028391F1D008427FD /* showToastMessage.swift */,
+				FD228AE128395EB8008427FD /* delayWithSeconds.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -765,6 +773,31 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		FD228AD628395D31008427FD /* SplashScene */ = {
+			isa = PBXGroup;
+			children = (
+				FD228ADA28395D62008427FD /* Views */,
+				FD228AD928395D5B008427FD /* VC */,
+			);
+			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		FD228AD928395D5B008427FD /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FD228ADD28395D89008427FD /* SplashVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		FD228ADA28395D62008427FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD228ADF28395DB9008427FD /* Splash.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -836,6 +869,7 @@
 				FD2289FB283908F9008427FD /* Assets.xcassets in Resources */,
 				FD228ACD28392685008427FD /* TouchKing.storyboard in Resources */,
 				FD228A8A28391F5B008427FD /* TabbarView.xib in Resources */,
+				FD228AE028395DB9008427FD /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -923,6 +957,7 @@
 				FD228A9A283920FE008427FD /* drawDashedLine + UIView.swift in Sources */,
 				FD228A5B28391F1D008427FD /* setImage.swift in Sources */,
 				FD228A4128391EC4008427FD /* SampleModel.swift in Sources */,
+				FD228ADE28395D89008427FD /* SplashVC.swift in Sources */,
 				FD228A98283920FE008427FD /* successCatch + Result.swift in Sources */,
 				FD228A3328390B41008427FD /* ModuleFactory.swift in Sources */,
 				FD228A6D28391F25008427FD /* SampleRepository.swift in Sources */,
@@ -944,6 +979,7 @@
 				FD228A7228391F25008427FD /* BaseService.swift in Sources */,
 				FD228A2E28390B41008427FD /* LaunchInstructor.swift in Sources */,
 				FD228A7128391F25008427FD /* ResponseObject.swift in Sources */,
+				FD228AE228395EB8008427FD /* delayWithSeconds.swift in Sources */,
 				FD228AD1283926A0008427FD /* HomeVC.swift in Sources */,
 				FD228A8728391F5B008427FD /* TabbarIcon.swift in Sources */,
 				FD228A2D28390B41008427FD /* BaseCoordinator.swift in Sources */,
