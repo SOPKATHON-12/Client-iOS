@@ -17,12 +17,7 @@ class SplashVC: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      for family in UIFont.familyNames {
-        print("\(family)");
-        for names in UIFont.fontNames(forFamilyName: family) {
-          print("== \(names)");
-        }
-      }
+
       self.splashIconView.alpha = 0
       delayWithSeconds(0.5) {
         self.showAnimation()

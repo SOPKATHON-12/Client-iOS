@@ -13,7 +13,7 @@ class TouchKingVC: UIViewController {
 
   weak var videoTimer: Timer?
   var minutes = 0
-  var seconds = 60
+  var seconds = 15
   var milliseconds = 0
   
   var isTimerValid = false

@@ -21,7 +21,6 @@ struct TabbarIconViewModel {
 final class TabbarIcon: XibView{
   
   @IBOutlet weak var iconImageView: UIImageView!
-  @IBOutlet weak var iconTitleLabel: UILabel!
   
   var viewModel: TabbarIconViewModel? {
     didSet{
@@ -31,25 +30,21 @@ final class TabbarIcon: XibView{
 
   private func configureUI() {
     guard let viewModel = viewModel else { return }
-    iconTitleLabel.font = .systemFont(ofSize: 12)
-    iconTitleLabel.textColor =
-    viewModel.clicked ? UIColor.enabledTabbarColor : UIColor.disabledTabbarColor
-
+    if viewModel.clicked {
+      iconImageView.alpha = 1
+    } else {
+      iconImageView.alpha = 0.5
+    }
+  
     switch(viewModel.type){
       case .home:
-        iconImageView.image =
-        viewModel.clicked ? ImageLiterals.TabBar.homeSelected : ImageLiterals.TabBar.home
-        iconTitleLabel.text = I18N.Tabbar.home
+        iconImageView.image = ImageLiterals.TabBar.home
 
       case .feed:
-        iconImageView.image =
-        viewModel.clicked ? ImageLiterals.TabBar.feedSelected : ImageLiterals.TabBar.feed
-        iconTitleLabel.text = I18N.Tabbar.feed
+        iconImageView.image = ImageLiterals.TabBar.feed
         
       case .ranking:
-        iconImageView.image =
-        viewModel.clicked ? ImageLiterals.TabBar.rankingSelected : ImageLiterals.TabBar.ranking
-        iconTitleLabel.text = I18N.Tabbar.ranking
+        iconImageView.image = ImageLiterals.TabBar.ranking
     }
   }
 }

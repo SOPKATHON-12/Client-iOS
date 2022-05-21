@@ -27,6 +27,7 @@ class BaseVC: UIViewController {
     super.viewDidLoad()
     configureTabbarDelegate()
     tabbarClicked(.home)
+    configureUI()
     addObserver()
   }
   
@@ -60,6 +61,11 @@ class BaseVC: UIViewController {
 extension BaseVC: MainTabbarDelegate{
   private func configureTabbarDelegate(){
     tabbar.delegate = self
+  }
+  
+  private func configureUI() {
+    tabbar.layer.cornerRadius = 15
+    tabbar.layer.applyShadow(color: .black, alpha: 0.25, x: 2, y: 3, blur: 4, spread: 0)
   }
   
   func tabbarClicked(_ type: TabbarIconType) {
