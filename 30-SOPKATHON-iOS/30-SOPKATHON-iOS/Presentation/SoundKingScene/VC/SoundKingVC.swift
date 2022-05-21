@@ -15,12 +15,13 @@ class SoundKingVC: UIViewController {
   
   weak var videoTimer: Timer?
   var minutes = 0
-  var seconds = 30
+  var seconds = 8
   var milliseconds = 0
 
   var recorder: AVAudioRecorder!
   var levelTimer = Timer()
   var maxDB = 0
+  var maxLevel = 0
   
   // MARK: - UI Component Part
   
@@ -34,7 +35,16 @@ class SoundKingVC: UIViewController {
     super.viewDidLoad()
     initRecord()
     startTimer()
-    
+    addObserver()
+  }
+  
+  private func addObserver() {
+    addObserverAction(.homeButtonClicked) { _ in
+      self.navigationController?.popViewController(animated: true)
+    }
+    addObserverAction(.writeComplete) { _ in
+      self.navigationController?.popViewController(animated: true)
+    }
   }
   
   func initRecord() {
@@ -95,10 +105,22 @@ class SoundKingVC: UIViewController {
           milliseconds = 9
       }
       if minutes == 0 && seconds == 0 && milliseconds == 0 {
-          showTimer()
-          videoTimer?.invalidate()
+        showTimer()
+        videoTimer?.invalidate()
+        recorder.stop()
+        showWriteVC()
       }
   }
+  
+  private func showWriteVC() {
+    let writeVC = ModuleFactory.shared.makeWritingVC()
+    writeVC.modalTransitionStyle = .crossDissolve
+    writeVC.modalPresentationStyle = .overCurrentContext
+    let maxLevel = ( maxDB - 60 ) / 20
+    writeVC.angryLevel = maxLevel
+    self.present(writeVC, animated: true)
+  }
+  
 
   func showTimer() {
    let millisecStr = "\(milliseconds)"
@@ -120,9 +142,6 @@ class SoundKingVC: UIViewController {
     // userDomainMask에 녹음 파일 생성
     let documents = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0])
     let url = documents.appendingPathComponent("record.caf")
-    print("이 URL을 복사한 뒤 Finder - '이동' 메뉴 - '폴더로 가기'를 사용해 이동하세요.",
-          documents.absoluteString.replacingOccurrences(of: "file://", with: "")
-    )
     
     // 녹음 세팅
     let recordSettings: [String: Any] = [
@@ -158,6 +177,7 @@ class SoundKingVC: UIViewController {
     let power = pow(10.0, level / 20.0) * 70.0  + 55
     let powerInt = String(Int(round(power)))
     maxDB = max(maxDB, Int(round(power)))
+
     
     let a = (round(power) - 60) / 12
 //    maxLabel.text = "최대 데시벨 : " + String(maxDB)

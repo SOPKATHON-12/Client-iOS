@@ -15,6 +15,7 @@ class TouchKingVC: UIViewController {
   var minutes = 0
   var seconds = 15
   var milliseconds = 0
+  var level = 0
   
   var isTimerValid = false
   var count = 0 {
@@ -34,6 +35,7 @@ class TouchKingVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     startTimer()
+    addObserver()
   }
   // MARK: - IBAction Part
 
@@ -54,19 +56,35 @@ class TouchKingVC: UIViewController {
   }
   // MARK: - Custom Method Part
   
+  private func addObserver() {
+    addObserverAction(.homeButtonClicked) { _ in
+      self.navigationController?.popViewController(animated: true)
+    }
+    addObserverAction(.writeComplete) { _ in
+      self.navigationController?.popViewController(animated: true)
+    }
+  }
+  
   private func makeAngryIcon() {
     switch (count) {
       case 0 ... 10 :
-        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon0
+        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon1
+        level = 1
         
       case 11 ... 40 :
-        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon1
+        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon2
+        level = 2
+
         
       case 41 ... 70 :
-        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon2
+        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon3
+        level = 3
+
         
       default :
-        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon3
+        self.angryIconView.image = ImageLiterals.MainIcon.angryIcon4
+        level = 4
+
 
     }
   }
@@ -113,7 +131,18 @@ extension TouchKingVC {
       showTimer()
       videoTimer?.invalidate()
       isTimerValid = false
+      showWriteVC()
+      
     }
+  }
+  
+  private func showWriteVC() {
+    let writeVC = ModuleFactory.shared.makeWritingVC()
+    writeVC.modalTransitionStyle = .crossDissolve
+    writeVC.modalPresentationStyle = .overCurrentContext
+    let maxLevel = ( count - 60 ) / 20
+    writeVC.angryLevel = level
+    self.present(writeVC, animated: true)
   }
   
   func showTimer() {

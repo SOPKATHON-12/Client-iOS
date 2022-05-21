@@ -27,20 +27,20 @@
                                             <constraint firstAttribute="height" constant="150" id="bUJ-vY-fDD"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t69-92-lBT">
-                                        <rect key="frame" x="133" y="190" width="83.5" height="97"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="혜화동불가마" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t69-92-lBT">
+                                        <rect key="frame" x="58.5" y="170" width="228.5" height="95.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 나의 분노 한줄평" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnL-Hf-XtV">
-                                        <rect key="frame" x="20.5" y="244" width="304" height="43"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <rect key="frame" x="95.5" y="244" width="154" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4C-S9-W5T">
-                                        <rect key="frame" x="113.5" y="344" width="118" height="33"/>
+                                        <rect key="frame" x="113.5" y="322.5" width="118" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="8n7-0l-Laf"/>
                                             <constraint firstAttribute="width" constant="118" id="XUd-jR-kiX"/>
@@ -51,19 +51,20 @@
                                             <backgroundConfiguration key="background" cornerRadius="10">
                                                 <color key="backgroundColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="writeFinishButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="S4u-NG-kOR"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="znY-yh-pAg">
-                                        <rect key="frame" x="31.5" y="299" width="282" height="33"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="znY-yh-pAg">
+                                        <rect key="frame" x="31.5" y="277.5" width="282" height="33"/>
                                         <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="282" id="B9P-Nc-gDG"/>
                                             <constraint firstAttribute="height" constant="33" id="UJU-4v-sSR"/>
                                         </constraints>
-                                        <color key="textColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -72,11 +73,11 @@
                                 <constraints>
                                     <constraint firstItem="FnL-Hf-XtV" firstAttribute="top" secondItem="l3H-9n-HHu" secondAttribute="top" constant="244" id="1TY-in-82M"/>
                                     <constraint firstItem="znY-yh-pAg" firstAttribute="top" secondItem="FnL-Hf-XtV" secondAttribute="bottom" constant="12" id="7Hj-AJ-nU1"/>
-                                    <constraint firstItem="t69-92-lBT" firstAttribute="leading" secondItem="l3H-9n-HHu" secondAttribute="leading" constant="133" id="B07-KF-pu6"/>
                                     <constraint firstAttribute="trailing" secondItem="uST-Ga-WAJ" secondAttribute="trailing" constant="97.5" id="Bms-ZE-yo5"/>
                                     <constraint firstItem="Z4C-S9-W5T" firstAttribute="centerX" secondItem="l3H-9n-HHu" secondAttribute="centerX" id="DmN-vm-rc0"/>
                                     <constraint firstAttribute="height" constant="380" id="P5t-rt-bNz"/>
-                                    <constraint firstItem="t69-92-lBT" firstAttribute="top" secondItem="uST-Ga-WAJ" secondAttribute="bottom" id="V4L-ZD-Yry"/>
+                                    <constraint firstItem="t69-92-lBT" firstAttribute="centerX" secondItem="l3H-9n-HHu" secondAttribute="centerX" id="Q8u-gB-p7B"/>
+                                    <constraint firstItem="t69-92-lBT" firstAttribute="top" secondItem="uST-Ga-WAJ" secondAttribute="bottom" constant="-20" id="V4L-ZD-Yry"/>
                                     <constraint firstItem="znY-yh-pAg" firstAttribute="top" secondItem="t69-92-lBT" secondAttribute="bottom" constant="12" id="Z5V-ej-QjT"/>
                                     <constraint firstItem="uST-Ga-WAJ" firstAttribute="top" secondItem="l3H-9n-HHu" secondAttribute="top" constant="40" id="c9r-Gh-4BA"/>
                                     <constraint firstItem="uST-Ga-WAJ" firstAttribute="leading" secondItem="l3H-9n-HHu" secondAttribute="leading" constant="97.5" id="dA4-a1-0qz"/>
@@ -88,6 +89,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="l3H-9n-HHu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="216" id="iaI-1i-qxm"/>
                             <constraint firstItem="l3H-9n-HHu" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="uIB-D2-45J"/>
@@ -99,6 +101,7 @@
                         <outlet property="nameLabel" destination="t69-92-lBT" id="IWa-Me-dYM"/>
                         <outlet property="upsetLabel" destination="FnL-Hf-XtV" id="Iz8-su-QiY"/>
                         <outlet property="userImgView" destination="uST-Ga-WAJ" id="nc7-mJ-kRx"/>
+                        <outlet property="writeContainerTopConstraint" destination="iaI-1i-qxm" id="AB5-DF-WR7"/>
                         <outlet property="writingView" destination="l3H-9n-HHu" id="waD-Pc-fuB"/>
                     </connections>
                 </viewController>

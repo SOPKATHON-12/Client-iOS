@@ -9,29 +9,36 @@ import Moya
 import Alamofire
 
 enum BaseAPI{
-  case sampleAPI(sample : String)
+  case sampleAPI
+  case postGameResult(type: String, score: Int, comment: String, emojiLevel: Int)
+  case getMyRecordInMonth
+  case getMyRecordInDay
+  case getRanking(type: String)
 
 }
 
 extension BaseAPI: TargetType {
   // MARK: - Base URL & Path
   /// - Parameters:
-  ///   - base : 각 api case별로 앞에 공통적으로 붙는 주소 부분을 정의합니다.
-  ///   - path : 각 api case별로 뒤에 붙는 개별적인 주소 부분을 정의합니다. (없으면 안적어도 상관 X)
-  ///           bas eURL과  path의 차이점은
-  ///           a  : (고정주소값)/post/popular
-  ///           b  : (고정주소값)/post/new
-  ///
-  ///     a와 b 라는 주소가 있다고 하면은
-  ///     case a,b -> baseURL은 "/post"이고,
-  ///      case a -> path 은 "/popular"
-  ///      case b -> path 는 /new" 입니다.
+
   ///
   public var baseURL: URL {
       var base = Config.Network.baseURL
       switch self{
-      case .sampleAPI:
-        base += ""
+      case .postGameResult:
+        base += "/game"
+          
+        case .getMyRecordInMonth:
+          base += "/myrecord/month"
+          
+        case .getMyRecordInDay:
+          base += "/myrecord/date"
+          
+        case .getRanking:
+          base += "/game/ranking"
+          
+        case .sampleAPI:
+          base += "/"
       }
     guard let url = URL(string: base) else {
       fatalError("baseURL could not be configured")
@@ -48,8 +55,7 @@ extension BaseAPI: TargetType {
   ///
   var path: String {
     switch self{
-    case .sampleAPI:
-      return ""
+
     default :
       return ""
     }
@@ -60,7 +66,7 @@ extension BaseAPI: TargetType {
   ///  각 case 별로 get,post,delete,put 인지 정의합니다.
   var method: Moya.Method {
     switch self{
-    case .sampleAPI:
+    case .postGameResult:
       return .post
     default :
       return .get
@@ -83,9 +89,24 @@ extension BaseAPI: TargetType {
   private var bodyParameters: Parameters? {
     var params: Parameters = [:]
     switch self{
-    case .sampleAPI(let email):
-      params["email"] = email
-      params["password"] = "여기에 필요한 Value값 넣기"
+
+        
+      case .postGameResult(let type, let score, let comment, let emojiLevel) :
+        params["type"] = type
+        params["score"] = score
+        params["comment"] = comment
+        params["emojiLevel"] = emojiLevel
+        
+      case .getMyRecordInMonth:
+        params["month"] = 5
+        
+      case .getMyRecordInDay:
+        params["month"] = 5
+        params["day"] = 9
+      
+      case .getRanking(let type) :
+        params["type"] = type
+        
     default:
       break
       
@@ -100,10 +121,7 @@ extension BaseAPI: TargetType {
   ///
   private var multiparts: [Moya.MultipartFormData] {
     switch self{
-    case .sampleAPI(_):
-      var multiparts : [Moya.MultipartFormData] = []
-      multiparts.append(.init(provider: .data("".data(using: .utf8) ?? Data()), name: ""))
-      return multiparts
+
     default : return []
     }
   }
@@ -114,7 +132,7 @@ extension BaseAPI: TargetType {
   ///
   private var parameterEncoding : ParameterEncoding{
     switch self {
-    case .sampleAPI:
+      case .sampleAPI,.getMyRecordInMonth, .getMyRecordInDay, .getRanking:
       return URLEncoding.init(destination: .queryString, arrayEncoding: .noBrackets, boolEncoding: .literal)
     default :
       return JSONEncoding.default
@@ -128,7 +146,7 @@ extension BaseAPI: TargetType {
   ///
   var task: Task {
     switch self{
-    case .sampleAPI:
+      case .sampleAPI,.postGameResult, .getMyRecordInMonth, .getMyRecordInDay, .getRanking:
       return .requestParameters(parameters: bodyParameters ?? [:], encoding: parameterEncoding)
     default:
       return .requestPlain

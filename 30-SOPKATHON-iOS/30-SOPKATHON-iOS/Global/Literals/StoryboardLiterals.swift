@@ -15,6 +15,7 @@ enum Storyboards: String {
   case touchKing = "TouchKing"
   case writing = "Writing"
   case feed = "Feed"
+  case feedCalendar = "FeedCalendar"
   case ranking = "Ranking"
 }
 

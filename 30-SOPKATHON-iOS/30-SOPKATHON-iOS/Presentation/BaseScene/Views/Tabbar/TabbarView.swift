@@ -29,24 +29,28 @@ final class TabbarView: XibView{
   
   @IBAction func homeButtonClicked(_ sender: Any) {
     makeVibrate()
-    if currentTab != .home{
-      delegate?.tabbarClicked(.home)
-      currentTab = .home
-		} else {
-			postObserverAction(.homeButtonClicked)
-		}
-  }
-  
-  
-  @IBAction func feedClicked(_ sender: Any) {
-    
-    makeVibrate()
     if currentTab != .feed{
       delegate?.tabbarClicked(.feed)
       currentTab = .feed
     } else {
       postObserverAction(.feedButtonClicked)
     }
+  }
+  
+  
+  @IBAction func feedClicked(_ sender: Any) {
+    
+    
+    makeVibrate()
+    if currentTab != .home{
+      delegate?.tabbarClicked(.home)
+      currentTab = .home
+    } else {
+      postObserverAction(.homeButtonClicked)
+    }
+    
+    
+
   }
   
   @IBAction func rankingClicked(_ sender: Any) {
@@ -62,8 +66,8 @@ final class TabbarView: XibView{
 
   private func setTabbarViewModel() {
     
-    homeIcon.viewModel = TabbarIconViewModel(type: .home, clicked: currentTab == .home)
-    feedIcon.viewModel = TabbarIconViewModel(type: .feed, clicked: currentTab == .feed)
+    homeIcon.viewModel = TabbarIconViewModel(type: .feed, clicked: currentTab == .feed)
+    feedIcon.viewModel = TabbarIconViewModel(type: .home, clicked: currentTab == .home)
     rankingIcon.viewModel = TabbarIconViewModel(type: .ranking, clicked: currentTab == .ranking)
   }
 }

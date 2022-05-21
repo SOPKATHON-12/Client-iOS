@@ -38,9 +38,9 @@ class BaseVC: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     guard let navigationController = navigationController else { return }
     for (index,vc) in navigationController.viewControllers.enumerated() {
-//      if vc.className == SplashVC.className {
-//        navigationController.viewControllers.remove(at: index)
-//      }
+      if vc.className == SplashVC.className {
+        navigationController.viewControllers.remove(at: index)
+      }
     }
   }
   
@@ -100,10 +100,9 @@ extension BaseVC: MainTabbarDelegate{
   
   private func makeScene(_ type: TabbarIconType) -> UIViewController{
     switch(type) {
-      case .home: return moduleFactory.makeHomeVC()
-      case .feed: return moduleFactory.makeFeedVC()
+      case .home: return moduleFactory.makeHomeNC()
+      case .feed: return moduleFactory.makeFeedCalendarNC()
       case .ranking: return moduleFactory.makeRankingVC()
-        
     }
   }
 }
