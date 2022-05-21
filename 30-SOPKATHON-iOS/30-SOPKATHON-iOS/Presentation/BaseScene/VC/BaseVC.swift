@@ -22,10 +22,16 @@ class BaseVC: UIViewController {
   
   // MARK: - Life Cycle Part
   override func viewDidLoad() {
+    self.sceneContainerView.alpha = 0
+    self.tabbar.alpha = 0
     super.viewDidLoad()
     configureTabbarDelegate()
     tabbarClicked(.home)
     addObserver()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    self.showAnimation()
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -39,6 +45,13 @@ class BaseVC: UIViewController {
   
   open override func didMove(toParent parent: UIViewController?) {
     navigationController?.fixInteractivePopGestureRecognizer(delegate: self)
+  }
+  
+  private func showAnimation() {
+    UIView.animate(withDuration: 1, delay: 0) {
+      self.sceneContainerView.alpha = 1
+      self.tabbar.alpha = 1
+    }
   }
 }
 
