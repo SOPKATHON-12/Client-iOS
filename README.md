@@ -1,7 +1,7 @@
 # 한(恨)도초과
 **내 ‘한’이 초과되는 순간 게임으로 풀어보는 내 마음속 '한'이야기.**  <br>
 
-<img src="https://user-images.githubusercontent.com/58043306/169671724-4b4ff98a-bd37-43d3-973d-a715c317290d.png" width="550" height="400">
+<img src="https://user-images.githubusercontent.com/58043306/169827111-9014dc98-0d7a-4844-bda5-279dce256663.png" width="800" height="500">
 
 - 누가 널 빡치게 했니? 일상속 생긴 스트레스 나한테 풀고! 얘기해봐!
 - 소리지르기/부수기 게임으로 '랭킹'확인 최고의 빡침러가 되고 친구에게 오늘의 빡침을 '공유'해보자!
@@ -10,7 +10,7 @@
 <br>
 
 ## 🤸🏻‍♀️ GUI Flow
-![gui _flow](https://user-images.githubusercontent.com/58043306/169671796-f03c071e-e838-4571-8037-50f4581f97f1.jpg)
+<img src="https://user-images.githubusercontent.com/58043306/169671796-f03c071e-e838-4571-8037-50f4581f97f1.jpg" width="800" height="800">
 
 ## 🍎 iOS Developer
 - 지훈
@@ -54,7 +54,7 @@ https://flaxen-warlock-70e.notion.site/ec5a0d076e794b12b45f507708533a35
 | UI | ✔️ | 지훈, 주현, 윤서 |
 | 서버 연결 | ✔️ | 지훈 |
 
-## 🥹 아무튼 추억
+## 🥹 Album
 <details>
 <summary> 😎 </summary>
 <div markdown="1">     
